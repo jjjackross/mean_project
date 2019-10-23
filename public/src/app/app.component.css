@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-family: 'Courier New', Courier, monospace;
+    /* outline: 1px solid greenyellow; */
+}
+main {
+    width: 650px;
+    border: 2px dashed black;
+    padding: 15px;
+    margin: auto;
+}
+#container {
+    width: 750px;
+    margin: auto;
+    text-align: center;
+}
+#container h2 {
+    font-style: italic;
+    text-decoration: underline;
+    margin: 15px 0;
+}
+#container button {
+    padding: 3px;
+    margin: 15px 0;
+    font-size: 8pt;
+    color: grey;
+    background-color: rgb(182, 182, 182);
+}
+#container button:hover {
+    background-color: rgb(216, 31, 31);
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
