@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 
 @Component({
   selector: 'app-week02',
@@ -29,16 +30,22 @@ export class Week02Component implements OnInit {
     document.getElementById("e2_container2").style.display = 'inline-block';
   }
 
-  e2_correctAnswer() {
+  e2_correctAnswer1() {
     document.getElementById("e2_prompt").style.display = 'none';
     document.getElementById("e2_buttons").style.display = 'none';
     document.getElementById("e2_outcome1").style.display = 'inline-block';
   }
 
-  e2_incorrectAnswer() {
+  e2_correctAnswer2() {
     document.getElementById("e2_prompt").style.display = 'none';
     document.getElementById("e2_buttons").style.display = 'none';
     document.getElementById("e2_outcome2").style.display = 'inline-block';
+  }
+
+  e2_incorrectAnswer() {
+    document.getElementById("e2_prompt").style.display = 'none';
+    document.getElementById("e2_buttons").style.display = 'none';
+    document.getElementById("e2_outcome3").style.display = 'inline-block';
   }
 
 }

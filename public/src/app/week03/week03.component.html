@@ -1,1 +1,57 @@
-<p>week03 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+    <main>
+        <p id="e1_prompt" class="storyline">Today was your introduction into Python! <mark class="blue">You learned that
+                Python is...</mark></p>
+        <div id="e1_outcome1">
+            <p class="storyline"><mark class="green">Correct!</mark> Can you believe that the kid next to you thought
+                that
+                Python was a snake? How silly!</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome2">
+            <p class="storyline">There's no other way to say this but... <mark class="red">you're wrong.</mark> Now stop
+                crying and get over it you baby.</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+    </main>
+    <table id="e1_buttons">
+        <tr>
+            <button (click)="e1_correctAnswer()">An interpreted programming language</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer()">A genus of constricting snakes</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer()">The name of Michael Choi's dog</button>
+        </tr>
+    </table>
+</div>
+
+<!-- EVENT TWO -->
+<div id="e2_container2">
+    <main>
+        <p id="e2_prompt" class="storyline">"PROMPT"</p>
+        <div id="e2_outcome1">
+            <p class="storyline">"OUTCOME1"</p>
+            <button [routerLink]="['/week03']">Continue</button>
+        </div>
+        <div id="e2_outcome2">
+            <p class="storyline">"OUTCOME2"</p> <button [routerLink]="['/week04']">Continue</button>
+        </div>
+    </main>
+    <table id="e2_buttons">
+        <tr>
+            <button (click)="e2_incorrectAnswer()">"ANSWER1"</button>
+        </tr>
+        <tr>
+            <button (click)="e2_correctAnswer()">"ANSWER2"</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer()">"ANSWER3"</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer()">"ANSWER4"</button>
+        </tr>
+    </table>
+</div>
