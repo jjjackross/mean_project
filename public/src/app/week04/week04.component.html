@@ -1,28 +1,28 @@
 <!-- EVENT ONE -->
 <div id="e1_container1">
     <main>
-        <p id="e1_prompt" class="storyline">"PROMPT"</p>
+        <p id="e1_prompt" class="storyline">Time for algos! <mark class="blue">What would the console look like after
+                this algo is ran?</mark></p>
+        <img src="assets/img/algo2.png" alt="">
         <div id="e1_outcome1">
-            <p class="storyline">"OUTCOME1"</p>
+            <p class="storyline"><mark class="green">You got it! </mark>You're and algo legend. How would you like to
+                teach the class?</p>
             <button (click)="nextEvent()">Continue</button>
         </div>
         <div id="e1_outcome2">
-            <p class="storyline">"OUTCOME2"</p>
+            <p class="storyline"><mark class="red">Incorrect.</mark> Maybe next time... or maybe not.</p>
             <button (click)="nextEvent()">Continue</button>
         </div>
     </main>
     <table id="e1_buttons">
         <tr>
-            <button (click)="e1_incorrectAnswer()">"ANSWER1"</button>
+            <button (click)="e1_incorrectAnswer()">1 2 3 4 5 10</button>
         </tr>
         <tr>
-            <button (click)="e1_correctAnswer()">"ANSWER2"</button>
+            <button (click)="e1_correctAnswer()">0 1 2 3 4</button>
         </tr>
         <tr>
-            <button (click)="e1_incorrectAnswer()">"ANSWER3"</button>
-        </tr>
-        <tr>
-            <button (click)="e1_incorrectAnswer()">"ANSWER4"</button>
+            <button (click)="e1_incorrectAnswer()">0 1 2 3 4 5 6 7 8 9 10</button>
         </tr>
     </table>
 </div>

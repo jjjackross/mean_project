@@ -30,19 +30,19 @@ export class Week06Component implements OnInit {
     document.getElementById("e2_container2").style.display = 'inline-block';
   }
 
-  e2_correctAnswer1() {
+  e2_correctAnswer() {
     document.getElementById("e2_prompt").style.display = 'none';
     document.getElementById("e2_buttons").style.display = 'none';
     document.getElementById("e2_outcome1").style.display = 'inline-block';
   }
 
-  e2_correctAnswer2() {
+  e2_incorrectAnswer1() {
     document.getElementById("e2_prompt").style.display = 'none';
     document.getElementById("e2_buttons").style.display = 'none';
     document.getElementById("e2_outcome2").style.display = 'inline-block';
   }
 
-  e2_incorrectAnswer() {
+  e2_incorrectAnswer2() {
     document.getElementById("e2_prompt").style.display = 'none';
     document.getElementById("e2_buttons").style.display = 'none';
     document.getElementById("e2_outcome3").style.display = 'inline-block';

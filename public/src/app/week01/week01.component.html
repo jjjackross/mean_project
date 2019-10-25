@@ -1,19 +1,25 @@
 <!-- EVENT ONE -->
 <div id="e1_container1">
     <main>
-        <p id="e1_prompt" class="storyline">You come into class and look a room full of faces you have never meet. Adrian keeps telling everyone to work with eachother, but your not so sure. You are having an issue with one of the assignments. What do you do?
+        <p id="e1_prompt" class="storyline">You come into class and look at room full of faces you have never met.
+            Adrien keeps telling everyone to work with eachother, but you're not so sure. You are having an issue with
+            one of the assignments. What do you do?
         </p>
         <div id="e1_outcome1">
-            <p class="storyline">While waiting for Adrien to get out of a metting you find yourself waiting longer then expected. He happily helps you with your problem when he gets out, <mark class='red'>but you wasted so much time waiting and now you are falling behind.</mark></p>
+            <p class="storyline">While waiting for Adrien to get out of a meeting you find yourself waiting longer than
+                expected. He happily helps you with your problem when he gets out, <mark class='red'>but you wasted so
+                    much time waiting and now you are falling behind.</mark></p>
             <button (click)="nextEvent()">Continue</button>
         </div>
         <div id="e1_outcome2">
-            <p class="storyline">Google is your best friends and after some time searching you are able to find the solution to your problem. You wonder if anyone else may have had this issue.
+            <p class="storyline">Google is your best friends and after some time searching you are able to find the
+                solution to your problem. You wonder if anyone else may have had this issue.
             </p>
             <button (click)="nextEvent()">Continue</button>
         </div>
         <div id="e1_outcome3">
-            <p class="storyline">Your classmate says they had the exact same problem and <mark class="green"> shows you how to fix your code.</mark></p>
+            <p class="storyline">Your classmate says they had the exact same problem and <mark class="green"> shows you
+                    how to fix your code.</mark></p>
             <button (click)="nextEvent()">Continue</button>
         </div>
     </main>
@@ -32,30 +38,39 @@
 
 <!-- EVENT TWO -->
 <div id="e2_container2">
-        <main>
-            <p id="e2_prompt" class="storyline">It's time for the web fund exam already! I feel like we just started! Do you...</p>
-            <div id="e2_outcome1">
-                <p class="storyline">As you start taking the exam you are susprised to see how much you have actually learned in this short time. <mark class='green'>You complete the exam with time to spare and recieve your yellow belt!</mark></p>
-                <button [routerLink]="['/week02']">Continue</button>
-            </div>
-            <div id="e2_outcome2">
-                <p class="storyline">You come in next week to take your exam and Adrien is surprised to see a lack of leprosy on your person. You take the exam and realize that you slacked off all weekend when you should have been studying. <mark class='red'>You fail all three attempts and are forced to retake web fundamentals.</mark></p>
-                <button [routerLink]="['/gameover']">Continue</button>
-            </div>
-            <div id="e2_outcome3">
-                <p class="storyline">You decided to wait and get some extra study time in. This has you stressed all weekend and while you pass the exam the next week you <mark class='blue'>wonder if you could have passed it the week before.</mark></p>
-                <button [routerLink]="['/week02']">Continue</button>
-            </div>
-        </main>
-        <table id="e2_buttons">
-            <tr>
-                <button (click)="e2_correctAnswer()">Take the exam even though you feel unprepared</button>
-            </tr>
-            <tr>
-                <button (click)="e2_incorrectAnswer()">Slack Adrien that you have a bad case of leprosy and can't make it in today.</button>
-            </tr>
-            <tr>
-                <button (click)="e2_incorrectAnswer2()">Ask to take next week so you have the weekend to study.</button>
-            </tr>
-        </table>
-    </div>
+    <main>
+        <p id="e2_prompt" class="storyline">It's time for the web fund exam already! I feel like we just started! Do
+            you...</p>
+        <div id="e2_outcome1">
+            <p class="storyline">As you start taking the exam you are surprised to see how much you have actually
+                learned in this short time. <mark class='green'>You complete the exam with time to spare and recieve
+                    your yellow belt!</mark></p>
+            <button [routerLink]="['/week02']">Continue</button>
+        </div>
+        <div id="e2_outcome2">
+            <p class="storyline">You come in next week to take your exam and Adrien is surprised to see a lack of
+                leprosy on your person. You take the exam and realize that you slacked off all weekend when you should
+                have been studying. <mark class='red'>You fail all three attempts and are forced to retake web
+                    fundamentals.</mark></p>
+            <button [routerLink]="['/gameover']">Continue</button>
+        </div>
+        <div id="e2_outcome3">
+            <p class="storyline">You decided to wait and get some extra study time in. This has you stressed all weekend
+                and while you pass the exam the next week you <mark class='blue'>wonder if you could have passed it the
+                    week before.</mark></p>
+            <button [routerLink]="['/week02']">Continue</button>
+        </div>
+    </main>
+    <table id="e2_buttons">
+        <tr>
+            <button (click)="e2_correctAnswer()">Take the exam even though you feel unprepared</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer()">Slack Adrien that you have a bad case of leprosy and can't make it in
+                today.</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer2()">Ask to take next week so you have the weekend to study.</button>
+        </tr>
+    </table>
+</div>
