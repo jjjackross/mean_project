@@ -1,1 +1,68 @@
-<p>week08 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+    <main>
+        <p id="e1_prompt" class="storyline">A demo is starting soon and you really need to use the bathroom. After
+            checking around you see that all bathrooms are taken except for one, the bathroom with the broken lock.
+            <mark class="blue">The moment has come to make a game-time decision:</mark></p>
+        <div id="e1_outcome1">
+            <p class="storyline">After a few minutes of waiting a bathroom opens up. <mark class="green">Patience is a
+                    virtue.</mark>
+            </p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome2">
+            <p class="storyline">After going office to office 6 times in a row someone finally lets you use their
+                bathroom. <mark class="blue">The employees give you weird stares as you shuffle into the
+                    bathroom.</mark>
+            </p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome3">
+            <p class="storyline">Everything was going well until <mark class="red">TA Luis accidentally walked in on you
+                    using the restroom.</mark> It turns out that he too made a game-time decision to use the broken lock
+                bathroom. <mark class="green">You bond over your similar game-time decision making.</mark> Great minds
+                do think alike!</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+    </main>
+    <table id="e1_buttons">
+        <tr>
+            <button (click)="e1_incorrectAnswer()">Use the bathroom with the broken lock</button>
+        </tr>
+        <tr>
+            <button (click)="e1_correctAnswer1()">Wait for someone else to be done</button>
+        </tr>
+        <tr>
+            <button (click)="e1_correctAnswer2()">Go to floor 5 or 7 and ask to use their bathroom.</button>
+        </tr>
+    </table>
+</div>
+
+<!-- EVENT TWO -->
+<div id="e2_container2">
+    <main>
+        <p id="e2_prompt" class="storyline">Your classmate needs help getting the information for all of his
+            turtles from his mongodb database. <mark class="blue">What command would you run in the mongo
+                shell to
+                do this?</mark></p>
+        <div id="e2_outcome1">
+            <p class="storyline"><mark class="green">Nailed it!</mark> I see potential in you!</p>
+            <button [routerLink]="['/week09']">Continue</button>
+        </div>
+        <div id="e2_outcome2">
+            <p class="storyline"><mark class="red">Wrong.</mark> Better luck next time.</p> <button
+                [routerLink]="['/week09']">Continue</button>
+        </div>
+    </main>
+    <table id="e2_buttons">
+        <tr>
+            <button (click)="e2_correctAnswer()">db.turtles.find()</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer()">find.all.turtles()</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer()">bring['this.turtle']</button>
+        </tr>
+    </table>
+</div>

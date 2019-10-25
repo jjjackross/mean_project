@@ -1,18 +1,20 @@
 <!-- EVENT ONE -->
 <div id="e1_container1">
     <main>
-        <p id="e1_prompt" class="storyline">Today is your intro to databases. You're spacing out in class when- uh oh! Your <mark
-                class="red">evil instructor</mark>
+        <p id="e1_prompt" class="storyline">Today is your intro to databases. You're spacing out in class when- uh oh!
+            Your <mark class="red">evil instructor</mark>
             calls on you to answer a question in front of the whole class! Quick, <mark class="blue">what is the main
                 concept to consider when designing your database?</mark></p>
         <div id="e1_outcome1">
-            <p class="storyline"><mark class="green">You got it right!</mark> Your instructor slithers back into the corrupted github repository he crawled out of!
-            Until next time evil instructor, until next time...</p>
+            <p class="storyline"><mark class="green">You got it right!</mark> Your instructor slithers back into the
+                corrupted github repository he crawled out of!
+                Until next time evil instructor, until next time...</p>
             <button (click)="nextEvent()">Continue</button>
         </div>
         <div id="e1_outcome2">
-            <p class="storyline"><mark class="red">Oh no!</mark> Your answer was wrong. Your evil instructor suceeded in embarassing you. He does his
-            happy dance.</p>
+            <p class="storyline"><mark class="red">Oh no! Your answer was wrong.</mark> Your evil instructor succeeded
+                in embarassing you. He does his
+                happy dance.</p>
             <button (click)="nextEvent()">Continue</button>
         </div>
     </main>
@@ -34,29 +36,98 @@
 
 <!-- EVENT TWO -->
 <div id="e2_container2">
-        <main>
-            <p id="e2_prompt" class="storyline">"PROMPT"</p>
-            <div id="e2_outcome1">
-                <p class="storyline">"OUTCOME1"</p>
-                <button [routerLink]="['/week03']">Continue</button>
-            </div>
-            <div id="e2_outcome2">
-                <p class="storyline"><"OUTCOME2"</p>
-                <button [routerLink]="['/week03']">Continue</button>
-            </div>
-        </main>
-        <table id="e2_buttons">
-            <tr>
-                <button (click)="e2_incorrectAnswer()">"ANSWER1"</button>
-            </tr>
-            <tr>
-                <button (click)="e2_correctAnswer()">"ANSWER2"</button>
-            </tr>
-            <tr>
-                <button (click)="e2_incorrectAnswer()">"ANSWER3"</button>
-            </tr>
-            <tr>
-                <button (click)="e2_incorrectAnswer()">"ANSWER4"</button>
-            </tr>
-        </table>
-    </div>
+    <main>
+        <p id="e2_prompt" class="storyline">You've been invited to go watch a different cohort present their projects
+            and
+            graduate! <mark class="blue">You decide to...</mark></p>
+        <div id="e2_outcome1">
+            <p class="storyline">Shortly after graduation began you came across an error you couldn't figure out and
+                your instructor was too busy with graduation to help. <mark class="blue">You ended up watching cat
+                    videos on YouTube for 2
+                    hours...</mark></p>
+            <button [routerLink]="['/week03']">Continue</button>
+        </div>
+        <div id="e2_outcome2">
+            <p class="storyline">Your coffee was delicious and the presentations were interesting, <mark
+                    class="green">you learned a lot!
+                </mark></p> <button [routerLink]="['/week03']">Continue</button>
+        </div>
+        <div id="e2_outcome3">
+            <p class="storyline">Shortly after devouring your plate of food your stomach went off the rails. <mark
+                    class="red">You spent the next hour in the bathroom cursing the cheese gods.</mark></p> <button
+                [routerLink]="['/week03']">Continue</button>
+        </div>
+    </main>
+    <table id="e2_buttons">
+        <tr>
+            <button (click)="e2_correctAnswer1()">Stay at your computer and get work done</button>
+        </tr>
+        <tr>
+            <button (click)="e2_correctAnswer2()">Grab a coffee and watch</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer()">Grab a plate full of meat, cheese, & crackers and watch</button>
+        </tr>
+    </table>
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~ COPY AND PASTE TEMPLATE BELOW ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- EVENT ONE
+<div id="e1_container1">
+    <main>
+        <p id="e1_prompt" class="storyline">"PROMPT"</p>
+        <div id="e1_outcome1">
+            <p class="storyline">"OUTCOME1"</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome2">
+            <p class="storyline">"OUTCOME2"</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+    </main>
+    <table id="e1_buttons">
+        <tr>
+            <button (click)="e1_incorrectAnswer()">"ANSWER1"</button>
+        </tr>
+        <tr>
+            <button (click)="e1_correctAnswer()">"ANSWER2"</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer()">"ANSWER3"</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer()">"ANSWER4"</button>
+        </tr>
+    </table>
+</div>
+
+EVENT TWO
+<div id="e2_container2">
+    <main>
+        <p id="e2_prompt" class="storyline">"PROMPT"</p>
+        <div id="e2_outcome1">
+            <p class="storyline">"OUTCOME1"</p>
+            <button [routerLink]="['/week03']">Continue</button>
+        </div>
+        <div id="e2_outcome2">
+            <p class="storyline">"OUTCOME2"</p> <button [routerLink]="['/week03']">Continue</button>
+        </div>
+    </main>
+    <table id="e2_buttons">
+        <tr>
+            <button (click)="e2_incorrectAnswer()">"ANSWER1"</button>
+        </tr>
+        <tr>
+            <button (click)="e2_correctAnswer()">"ANSWER2"</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer()">"ANSWER3"</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer()">"ANSWER4"</button>
+        </tr>
+    </table>
+</div> -->

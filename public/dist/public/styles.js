@@ -338,7 +338,9 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\starv\OneDrive\Desktop\git-branches\mean_project\public\src\styles.css */"./src/styles.css");
+
+module.exports = __webpack_require__(/*! /Users/jackross/Desktop/coding_dojo/projects/coding_adventure/public/src/styles.css */"./src/styles.css");
+
 
 
 /***/ })

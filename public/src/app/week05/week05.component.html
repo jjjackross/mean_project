@@ -1,1 +1,69 @@
-<p>week05 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+    <main>
+        <p id="e1_prompt" class="storyline">It's almost exam day and you aren't even close to having "Login &
+            Registration" finished. <mark class="blue">What are you going to do?</mark> </p>
+        <div id="e1_outcome1">
+            <p class="storyline"><mark class="green">Good choice!</mark> Turns out Ryan decided to make the project's
+                you skipped optional anyways!</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome2">
+            <p class="storyline">You finally get through all your work the sunday before the test. <mark class="blue">It
+                    would have been easier to just ask if you can take the test monday.</mark></p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome3">
+            <p class="storyline">He says yes but after looking through it <mark class="red">you don't really understand
+                    his code.</mark></p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome4">
+            <p class="storyline">You find a version online but <mark class="red">it takes you all day to get it to work
+                    with your project.</mark></p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+    </main>
+    <table id="e1_buttons">
+        <tr>
+            <button (click)="e1_incorrectAnswer1()">Fake sick for the next couple days</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer2()">Ask a friend to send you his "Login & Registration"</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer3()">Try to find a copy online</button>
+        </tr>
+        <tr>
+            <button (click)="e1_correctAnswer()">Skip to "Login & Registration"</button>
+        </tr>
+    </table>
+</div>
+
+<!-- EVENT TWO -->
+<div id="e2_container2">
+    <main>
+        <p id="e2_prompt" class="storyline">"PROMPT"</p>
+        <div id="e2_outcome1">
+            <p class="storyline">"OUTCOME1"</p>
+            <button [routerLink]="['/week03']">Continue</button>
+        </div>
+        <div id="e2_outcome2">
+            <p class="storyline">"OUTCOME2"</p> <button [routerLink]="['/week03']">Continue</button>
+        </div>
+    </main>
+    <table id="e2_buttons">
+        <tr>
+            <button (click)="e2_incorrectAnswer()">"ANSWER1"</button>
+        </tr>
+        <tr>
+            <button (click)="e2_correctAnswer()">"ANSWER2"</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer()">"ANSWER3"</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer()">"ANSWER4"</button>
+        </tr>
+    </table>
+</div>

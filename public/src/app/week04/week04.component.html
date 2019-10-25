@@ -1,1 +1,61 @@
-<p>week04 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+    <main>
+        <p id="e1_prompt" class="storyline">"PROMPT"</p>
+        <div id="e1_outcome1">
+            <p class="storyline">"OUTCOME1"</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome2">
+            <p class="storyline">"OUTCOME2"</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+    </main>
+    <table id="e1_buttons">
+        <tr>
+            <button (click)="e1_incorrectAnswer()">"ANSWER1"</button>
+        </tr>
+        <tr>
+            <button (click)="e1_correctAnswer()">"ANSWER2"</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer()">"ANSWER3"</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer()">"ANSWER4"</button>
+        </tr>
+    </table>
+</div>
+
+<!-- EVENT TWO -->
+<div id="e2_container2">
+    <main>
+        <p id="e2_prompt" class="storyline">You get to class only to find out that the coffee machine is broken! <mark
+                class="blue">What will you do?</mark></p>
+        <div id="e2_outcome1">
+            <p class="storyline">You left and got 7/11's iced coffee. <mark class="green">It was delicious!</mark></p>
+            <button [routerLink]="['/week05']">Continue</button>
+        </div>
+        <div id="e2_outcome2">
+            <p class="storyline">Towards the end of the day you became super tired and fell asleep during Adrien's demo.
+                <mark class="red">Oops.</mark></p> <button [routerLink]="['/week05']">Continue</button>
+        </div>
+        <div id="e2_outcome3">
+            <p class="storyline">Although this was the totally out of the box and morally grey decision, it paid off.
+                <mark class="blue">After uncontrollable shaking and sweating for 5 minutes straight </mark><mark
+                    class="green">you became laser focused and flew through the days tasks.</mark></p> <button
+                [routerLink]="['/week05']">Continue</button>
+        </div>
+    </main>
+    <table id="e2_buttons">
+        <tr>
+            <button (click)="e2_correctAnswer()">Go buy iced coffee</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer1()">Go without coffee for the day</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer2()">Snort pre-workout in the bathroom</button>
+        </tr>
+    </table>
+</div>

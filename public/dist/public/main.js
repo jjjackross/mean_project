@@ -97,7 +97,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- EVENT ONE -->\r\n<div id=\"e1_container1\">\r\n    <main>\r\n        <p id=\"e1_prompt\" class=\"storyline\">Today is your intro to databases. You're spacing out in class when- uh oh! Your <mark\r\n                class=\"red\">evil instructor</mark>\r\n            calls on you to answer a question in front of the whole class! Quick, <mark class=\"blue\">what is the main\r\n                concept to consider when designing your database?</mark></p>\r\n        <div id=\"e1_outcome1\">\r\n            <p class=\"storyline\"><mark class=\"green\">You got it right!</mark> Your instructor slithers back into the corrupted github repository he crawled out of!\r\n            Until next time evil instructor, until next time...</p>\r\n            <button (click)=\"nextEvent()\">Continue</button>\r\n        </div>\r\n        <div id=\"e1_outcome2\">\r\n            <p class=\"storyline\"><mark class=\"red\">Oh no!</mark> Your answer was wrong. Your evil instructor suceeded in embarassing you. He does his\r\n            happy dance.</p>\r\n            <button (click)=\"nextEvent()\">Continue</button>\r\n        </div>\r\n    </main>\r\n    <table id=\"e1_buttons\">\r\n        <tr>\r\n            <button (click)=\"e1_incorrectAnswer()\">Store everything in sessions instead</button>\r\n        </tr>\r\n        <tr>\r\n            <button (click)=\"e1_correctAnswer()\">Don't repeat data</button>\r\n        </tr>\r\n        <tr>\r\n            <button (click)=\"e1_incorrectAnswer()\">Do a good job</button>\r\n        </tr>\r\n        <tr>\r\n            <button (click)=\"e1_incorrectAnswer()\">SQL is better than NoSQL</button>\r\n        </tr>\r\n    </table>\r\n</div>\r\n\r\n<!-- EVENT TWO -->\r\n<div id=\"e2_container2\">\r\n        <main>\r\n            <p id=\"e2_prompt\" class=\"storyline\">\"PROMPT\"</p>\r\n            <div id=\"e2_outcome1\">\r\n                <p class=\"storyline\">\"OUTCOME1\"</p>\r\n                <button [routerLink]=\"['/week03']\">Continue</button>\r\n            </div>\r\n            <div id=\"e2_outcome2\">\r\n                <p class=\"storyline\"><\"OUTCOME2\"</p>\r\n                <button [routerLink]=\"['/week03']\">Continue</button>\r\n            </div>\r\n        </main>\r\n        <table id=\"e2_buttons\">\r\n            <tr>\r\n                <button (click)=\"e2_incorrectAnswer()\">\"ANSWER1\"</button>\r\n            </tr>\r\n            <tr>\r\n                <button (click)=\"e2_correctAnswer()\">\"ANSWER2\"</button>\r\n            </tr>\r\n            <tr>\r\n                <button (click)=\"e2_incorrectAnswer()\">\"ANSWER3\"</button>\r\n            </tr>\r\n            <tr>\r\n                <button (click)=\"e2_incorrectAnswer()\">\"ANSWER4\"</button>\r\n            </tr>\r\n        </table>\r\n    </div>");
+
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- EVENT ONE -->\n<div id=\"e1_container1\">\n    <main>\n        <p id=\"e1_prompt\" class=\"storyline\">Today is your intro to databases. You're spacing out in class when- uh oh!\n            Your <mark class=\"red\">evil instructor</mark>\n            calls on you to answer a question in front of the whole class! Quick, <mark class=\"blue\">what is the main\n                concept to consider when designing your database?</mark></p>\n        <div id=\"e1_outcome1\">\n            <p class=\"storyline\"><mark class=\"green\">You got it right!</mark> Your instructor slithers back into the\n                corrupted github repository he crawled out of!\n                Until next time evil instructor, until next time...</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome2\">\n            <p class=\"storyline\"><mark class=\"red\">Oh no! Your answer was wrong.</mark> Your evil instructor succeeded\n                in embarassing you. He does his\n                happy dance.</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e1_buttons\">\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">Store everything in sessions instead</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_correctAnswer()\">Don't repeat data</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">Do a good job</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">SQL is better than NoSQL</button>\n        </tr>\n    </table>\n</div>\n\n<!-- EVENT TWO -->\n<div id=\"e2_container2\">\n    <main>\n        <p id=\"e2_prompt\" class=\"storyline\">You've been invited to go watch a different cohort present their projects\n            and\n            graduate! <mark class=\"blue\">You decide to...</mark></p>\n        <div id=\"e2_outcome1\">\n            <p class=\"storyline\">Shortly after graduation began you came across an error you couldn't figure out and\n                your instructor was too busy with graduation to help. <mark class=\"blue\">You ended up watching cat\n                    videos on YouTube for 2\n                    hours...</mark></p>\n            <button [routerLink]=\"['/week03']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome2\">\n            <p class=\"storyline\">Your coffee was delicious and the presentations were interesting, <mark\n                    class=\"green\">you learned a lot!\n                </mark></p> <button [routerLink]=\"['/week03']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome3\">\n            <p class=\"storyline\">Shortly after devouring your plate of food your stomach went off the rails. <mark\n                    class=\"red\">You spent the next hour in the bathroom cursing the cheese gods.</mark></p> <button\n                [routerLink]=\"['/week03']\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e2_buttons\">\n        <tr>\n            <button (click)=\"e2_correctAnswer1()\">Stay at your computer and get work done</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_correctAnswer2()\">Grab a coffee and watch</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">Grab a plate full of meat, cheese, & crackers and watch</button>\n        </tr>\n    </table>\n</div>\n\n<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->\n<!-- ~~~~~~~~~~~~~~~~~~~~~~~~ COPY AND PASTE TEMPLATE BELOW ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->\n<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->\n\n<!-- EVENT ONE\n<div id=\"e1_container1\">\n    <main>\n        <p id=\"e1_prompt\" class=\"storyline\">\"PROMPT\"</p>\n        <div id=\"e1_outcome1\">\n            <p class=\"storyline\">\"OUTCOME1\"</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome2\">\n            <p class=\"storyline\">\"OUTCOME2\"</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e1_buttons\">\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"ANSWER1\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_correctAnswer()\">\"ANSWER2\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"ANSWER3\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"ANSWER4\"</button>\n        </tr>\n    </table>\n</div>\n\nEVENT TWO\n<div id=\"e2_container2\">\n    <main>\n        <p id=\"e2_prompt\" class=\"storyline\">\"PROMPT\"</p>\n        <div id=\"e2_outcome1\">\n            <p class=\"storyline\">\"OUTCOME1\"</p>\n            <button [routerLink]=\"['/week03']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome2\">\n            <p class=\"storyline\">\"OUTCOME2\"</p> <button [routerLink]=\"['/week03']\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e2_buttons\">\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">\"ANSWER1\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_correctAnswer()\">\"ANSWER2\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">\"ANSWER3\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">\"ANSWER4\"</button>\n        </tr>\n    </table>\n</div> -->");
+
 
 /***/ }),
 
@@ -110,7 +112,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>week03 works!</p>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- EVENT ONE -->\n<div id=\"e1_container1\">\n    <main>\n        <p id=\"e1_prompt\" class=\"storyline\">Today was your introduction into Python! <mark class=\"blue\">You learned that\n                Python is...</mark></p>\n        <div id=\"e1_outcome1\">\n            <p class=\"storyline\"><mark class=\"green\">Correct!</mark> Can you believe that the kid next to you thought\n                that\n                Python was a snake? How silly!</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome2\">\n            <p class=\"storyline\">There's no other way to say this but... <mark class=\"red\">you're wrong.</mark> Now stop\n                crying and get over it you baby.</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e1_buttons\">\n        <tr>\n            <button (click)=\"e1_correctAnswer()\">An interpreted programming language</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">A genus of constricting snakes</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">The name of Michael Choi's dog</button>\n        </tr>\n    </table>\n</div>\n\n<!-- EVENT TWO -->\n<div id=\"e2_container2\">\n    <main>\n        <p id=\"e2_prompt\" class=\"storyline\">You're sitting front row during a lecture with instructor Ryan. After\n            introducing a new topic that you don't understand, Ryan decides to crack a joke, a joke that you also don't\n            understand. <mark class=\"blue\">How will you react to instructor Ryan's joke?</mark></p>\n        <div id=\"e2_outcome1\">\n            <p class=\"storyline\"><mark class=\"green\">It works!</mark> Maybe you should go into acting...</p> <button\n                [routerLink]=\"['/week04']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome2\">\n            <p class=\"storyline\">The entire dojo falls silent and everyone stares at you. After a long pause of awkward\n                silence Ryan continues his lecture... <mark class=\"blue\">success?</mark></p> <button\n                [routerLink]=\"['/week04']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome3\">\n            <p class=\"storyline\">Ryan responds with an equally blank stare. <mark class=\"blue\">Looks like a staring\n                    contest is on!</mark></p>\n            <button [routerLink]=\"['/week04']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome4\">\n            <p class=\"storyline\">Bullies aren't allowed at the coding dojo. Bullies get dropped from the dojo. <mark\n                    class=\"red\">You got dropped from the dojo.</mark></p> <button [routerLink]=\"['/gameover']\">Game\n                Over</button>\n        </div>\n    </main>\n    <table id=\"e2_buttons\">\n        <tr>\n            <button (click)=\"e2_correctAnswer1()\">Fake a laugh</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_correctAnswer2()\">Laugh maniacally</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_correctAnswer3()\">Give Ryan a blank stare</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">Tell instructor Ryan that his joke was bad</button>\n        </tr>\n    </table>\n</div>");
+
 
 /***/ }),
 
@@ -123,7 +126,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>week04 works!</p>\r\n");
+
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- EVENT ONE -->\n<div id=\"e1_container1\">\n    <main>\n        <p id=\"e1_prompt\" class=\"storyline\">\"PROMPT\"</p>\n        <div id=\"e1_outcome1\">\n            <p class=\"storyline\">\"OUTCOME1\"</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome2\">\n            <p class=\"storyline\">\"OUTCOME2\"</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e1_buttons\">\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"ANSWER1\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_correctAnswer()\">\"ANSWER2\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"ANSWER3\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"ANSWER4\"</button>\n        </tr>\n    </table>\n</div>\n\n<!-- EVENT TWO -->\n<div id=\"e2_container2\">\n    <main>\n        <p id=\"e2_prompt\" class=\"storyline\">You get to class only to find out that the coffee machine is broken! <mark\n                class=\"blue\">What will you do?</mark></p>\n        <div id=\"e2_outcome1\">\n            <p class=\"storyline\">You left and got 7/11's iced coffee. <mark class=\"green\">It was delicious!</mark></p>\n            <button [routerLink]=\"['/week05']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome2\">\n            <p class=\"storyline\">Towards the end of the day you became super tired and fell asleep during Adrien's demo.\n                <mark class=\"red\">Oops.</mark></p> <button [routerLink]=\"['/week05']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome3\">\n            <p class=\"storyline\">Although this was the totally out of the box and morally grey decision, it paid off.\n                <mark class=\"blue\">After uncontrollable shaking and sweating for 5 minutes straight </mark><mark\n                    class=\"green\">you became laser focused and flew through the days tasks.</mark></p> <button\n                [routerLink]=\"['/week05']\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e2_buttons\">\n        <tr>\n            <button (click)=\"e2_correctAnswer()\">Go buy iced coffee</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer1()\">Go without coffee for the day</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer2()\">Snort pre-workout in the bathroom</button>\n        </tr>\n    </table>\n</div>");
+
 
 /***/ }),
 
@@ -136,7 +141,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>week05 works!</p>\r\n");
+
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- EVENT ONE -->\n<div id=\"e1_container1\">\n    <main>\n        <p id=\"e1_prompt\" class=\"storyline\">It's almost exam day and you aren't even close to having \"Login &\n            Registration\" finished. <mark class=\"blue\">What are you going to do?</mark> </p>\n        <div id=\"e1_outcome1\">\n            <p class=\"storyline\"><mark class=\"green\">Good choice!</mark> Turns out Ryan decided to make the project's\n                you skipped optional anyways!</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome2\">\n            <p class=\"storyline\">You finally get through all your work the sunday before the test. <mark class=\"blue\">It\n                    would have been easier to just ask if you can take the test monday.</mark></p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome3\">\n            <p class=\"storyline\">He says yes but after looking through it <mark class=\"red\">you don't really understand\n                    his code.</mark></p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome4\">\n            <p class=\"storyline\">You find a version online but <mark class=\"red\">it takes you all day to get it to work\n                    with your project.</mark></p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e1_buttons\">\n        <tr>\n            <button (click)=\"e1_incorrectAnswer1()\">Fake sick for the next couple days</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer2()\">Ask a friend to send you his \"Login & Registration\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer3()\">Try to find a copy online</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_correctAnswer()\">Skip to \"Login & Registration\"</button>\n        </tr>\n    </table>\n</div>\n\n<!-- EVENT TWO -->\n<div id=\"e2_container2\">\n    <main>\n        <p id=\"e2_prompt\" class=\"storyline\">\"PROMPT\"</p>\n        <div id=\"e2_outcome1\">\n            <p class=\"storyline\">\"OUTCOME1\"</p>\n            <button [routerLink]=\"['/week03']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome2\">\n            <p class=\"storyline\">\"OUTCOME2\"</p> <button [routerLink]=\"['/week03']\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e2_buttons\">\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">\"ANSWER1\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_correctAnswer()\">\"ANSWER2\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">\"ANSWER3\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">\"ANSWER4\"</button>\n        </tr>\n    </table>\n</div>");
+
 
 /***/ }),
 
@@ -149,7 +156,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>week06 works!</p>\r\n");
+
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- EVENT ONE -->\n<div id=\"e1_container1\">\n    <main>\n        <p id=\"e1_prompt\" class=\"storyline\">\"PROMPT\"</p>\n        <div id=\"e1_outcome1\">\n            <p class=\"storyline\">\"OUTCOME1\"</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome2\">\n            <p class=\"storyline\">\"OUTCOME2\"</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e1_buttons\">\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"ANSWER1\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_correctAnswer()\">\"ANSWER2\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"ANSWER3\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"ANSWER4\"</button>\n        </tr>\n    </table>\n</div>\n\n<!-- EVENT TWO -->\n<div id=\"e2_container2\">\n    <main>\n        <p id=\"e2_prompt\" class=\"storyline\">\"PROMPT\"</p>\n        <div id=\"e2_outcome1\">\n            <p class=\"storyline\">\"OUTCOME1\"</p>\n            <button [routerLink]=\"['/week03']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome2\">\n            <p class=\"storyline\">\"OUTCOME2\"</p> <button [routerLink]=\"['/week03']\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e2_buttons\">\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">\"ANSWER1\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_correctAnswer()\">\"ANSWER2\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">\"ANSWER3\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">\"ANSWER4\"</button>\n        </tr>\n    </table>\n</div>");
+
 
 /***/ }),
 
@@ -162,7 +171,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>week07 works!</p>\r\n");
+
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- EVENT ONE -->\n<div id=\"e1_container1\">\n    <main>\n        <p id=\"e1_prompt\" class=\"storyline\">Using MEAN, <mark class=\"blue\">how do you include a parameter in\n                routes?</mark></p>\n        <div id=\"e1_outcome1\">\n            <p class=\"storyline\"><mark class=\"green\">Correct!</mark> You're a coding wizard!</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome2\">\n            <p class=\"storyline\"><mark class=\"red\">Wrong.</mark> Do we need to go over routing again?</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e1_buttons\">\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"some-route/~~param~~\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_correctAnswer()\">\"some-route/:param\"</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">\"some-route/$#param\"</button>\n        </tr>\n    </table>\n</div>\n\n<!-- EVENT TWO -->\n<div id=\"e2_container2\">\n    <main>\n        <p id=\"e2_prompt\" class=\"storyline\">Remember node? Remember using NPM in your commands every day? Well <mark\n                class=\"blue\">what does NPM stand for?</mark></p>\n        <div id=\"e2_outcome1\">\n            <p class=\"storyline\">Close! We know \"Node Piece Maker\" might sound all fancy and correct, but alas, it means\n                nothing.\n                <mark class=\"red\">You fail.</mark></p> <button [routerLink]=\"['/week08']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome2\">\n            <p class=\"storyline\">Seriously? Did you seriously think this was the right answer? I bet you don't make it\n                past week 8... <mark class=\"red\">Next!</mark></p> <button [routerLink]=\"['/week08']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome3\">\n            <p class=\"storyline\"><mark class=\"green\">You got it!</mark> I must say I am quite surprised... in a good\n                way, of course.</p> <button [routerLink]=\"['/week08']\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e2_buttons\">\n        <tr>\n            <button (click)=\"e2_incorrectAnswer1()\">Node Piece Maker</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer2()\">Nude Penguins Mating</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_correctAnswer()\">Node Package Manager</button>\n        </tr>\n    </table>\n</div>");
+
 
 /***/ }),
 
@@ -175,7 +186,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>week08 works!</p>\r\n");
+
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- EVENT ONE -->\n<div id=\"e1_container1\">\n    <main>\n        <p id=\"e1_prompt\" class=\"storyline\">A demo is starting soon and you really need to use the bathroom. After\n            checking around you see that all bathrooms are taken except for one, the bathroom with the broken lock.\n            <mark class=\"blue\">The moment has come to make a game-time decision:</mark></p>\n        <div id=\"e1_outcome1\">\n            <p class=\"storyline\">After a few minutes of waiting a bathroom opens up. <mark class=\"green\">Patience is a\n                    virtue.</mark>\n            </p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome2\">\n            <p class=\"storyline\">After going office to office 6 times in a row someone finally lets you use their\n                bathroom. <mark class=\"blue\">The employees give you weird stares as you shuffle into the\n                    bathroom.</mark>\n            </p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n        <div id=\"e1_outcome3\">\n            <p class=\"storyline\">Everything was going well until <mark class=\"red\">TA Luis accidentally walked in on you\n                    using the restroom.</mark> It turns out that he too made a game-time decision to use the broken lock\n                bathroom. <mark class=\"green\">You bond over your similar game-time decision making.</mark> Great minds\n                do think alike!</p>\n            <button (click)=\"nextEvent()\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e1_buttons\">\n        <tr>\n            <button (click)=\"e1_incorrectAnswer()\">Use the bathroom with the broken lock</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_correctAnswer1()\">Wait for someone else to be done</button>\n        </tr>\n        <tr>\n            <button (click)=\"e1_correctAnswer2()\">Go to floor 5 or 7 and ask to use their bathroom.</button>\n        </tr>\n    </table>\n</div>\n\n<!-- EVENT TWO -->\n<div id=\"e2_container2\">\n    <main>\n        <p id=\"e2_prompt\" class=\"storyline\">Your classmate needs help getting the information for all of his\n            turtles from his mongodb database. <mark class=\"blue\">What command would you run in the mongo\n                shell to\n                do this?</mark></p>\n        <div id=\"e2_outcome1\">\n            <p class=\"storyline\"><mark class=\"green\">Nailed it!</mark> I see potential in you!</p>\n            <button [routerLink]=\"['/week09']\">Continue</button>\n        </div>\n        <div id=\"e2_outcome2\">\n            <p class=\"storyline\"><mark class=\"red\">Wrong.</mark> Better luck next time.</p> <button\n                [routerLink]=\"['/week09']\">Continue</button>\n        </div>\n    </main>\n    <table id=\"e2_buttons\">\n        <tr>\n            <button (click)=\"e2_correctAnswer()\">db.turtles.find()</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">find.all.turtles()</button>\n        </tr>\n        <tr>\n            <button (click)=\"e2_incorrectAnswer()\">bring['this.turtle']</button>\n        </tr>\n    </table>\n</div>");
+
 
 /***/ }),
 
@@ -968,7 +981,8 @@ Week01Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".red {\r\n    color: red;\r\n    background-color: white;\r\n}\r\n.blue {\r\n    color: rgb(65, 65, 221);\r\n    background-color: white;\r\n    font-weight: 700;\r\n    font-style: italic;\r\n}\r\n.green {\r\n    color: green;\r\n    background-color: white;\r\n    font-weight: bold;\r\n    font-style: italic;\r\n    text-shadow: 2px 2px 3px;\r\n}\r\nmain {\r\n    width: 500px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\nmain .storyline {\r\n    text-align: center;\r\n}\r\ntable {\r\n    margin: 0 auto;\r\n}\r\ntable tr button {\r\n    margin: 5px 0;\r\n    padding: 5px;\r\n    border-radius: 5px;\r\n    font-size: 10pt;\r\n}\r\ntable tr button:hover {\r\n    cursor: pointer;\r\n    background-color: rgb(65, 65, 221);\r\n    color: white;\r\n}\r\n#e1_buttons {\r\n    display: inline-block;\r\n}\r\n#e1_prompt {\r\n    display: inline-block;\r\n}\r\n#e1_outcome1 {\r\n    display: none;\r\n}\r\n#e1_outcome2 {\r\n    display: none; \r\n}\r\nmain div button {\r\n    margin: 5px 0;\r\n    padding: 5px;\r\n    border-radius: 5px;\r\n    font-size: 10pt;\r\n}\r\nmain div button:hover {\r\n    cursor: pointer;\r\n    background-color: rgb(65, 65, 221);\r\n    color: white;\r\n}\r\n#e2_container2 {\r\n    display: none;\r\n}\r\n#e2_buttons {\r\n    display: inline-block;\r\n}\r\n#e2_prompt {\r\n    display: inline-block;\r\n}\r\n#e2_outcome1 {\r\n    display: none;\r\n}\r\n#e2_outcome2 {\r\n    display: none; \r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2VlazAyL3dlZWswMi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsd0JBQXdCO0FBQzVCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFHQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvd2VlazAyL3dlZWswMi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJlZCB7XHJcbiAgICBjb2xvcjogcmVkO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbn1cclxuLmJsdWUge1xyXG4gICAgY29sb3I6IHJnYig2NSwgNjUsIDIyMSk7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbn1cclxuLmdyZWVuIHtcclxuICAgIGNvbG9yOiBncmVlbjtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbiAgICB0ZXh0LXNoYWRvdzogMnB4IDJweCAzcHg7XHJcbn1cclxubWFpbiB7XHJcbiAgICB3aWR0aDogNTAwcHg7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxufVxyXG5tYWluIC5zdG9yeWxpbmUge1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcbnRhYmxlIHtcclxuICAgIG1hcmdpbjogMCBhdXRvO1xyXG59XHJcbnRhYmxlIHRyIGJ1dHRvbiB7XHJcbiAgICBtYXJnaW46IDVweCAwO1xyXG4gICAgcGFkZGluZzogNXB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gICAgZm9udC1zaXplOiAxMHB0O1xyXG59XHJcbnRhYmxlIHRyIGJ1dHRvbjpob3ZlciB7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNjUsIDY1LCAyMjEpO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG59XHJcbiNlMV9idXR0b25zIHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxufVxyXG4jZTFfcHJvbXB0IHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxufVxyXG4jZTFfb3V0Y29tZTEge1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxufVxyXG4jZTFfb3V0Y29tZTIge1xyXG4gICAgZGlzcGxheTogbm9uZTsgXHJcbn1cclxubWFpbiBkaXYgYnV0dG9uIHtcclxuICAgIG1hcmdpbjogNXB4IDA7XHJcbiAgICBwYWRkaW5nOiA1cHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgICBmb250LXNpemU6IDEwcHQ7XHJcbn1cclxubWFpbiBkaXYgYnV0dG9uOmhvdmVyIHtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYig2NSwgNjUsIDIyMSk7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcblxyXG4jZTJfY29udGFpbmVyMiB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG59XHJcbiNlMl9idXR0b25zIHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxufVxyXG4jZTJfcHJvbXB0IHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxufVxyXG4jZTJfb3V0Y29tZTEge1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxufVxyXG4jZTJfb3V0Y29tZTIge1xyXG4gICAgZGlzcGxheTogbm9uZTsgXHJcbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".red {\n    color: red;\n    background-color: white;\n}\n.blue {\n    color: rgb(65, 65, 221);\n    background-color: white;\n    font-weight: 700;\n    font-style: italic;\n}\n.green {\n    color: green;\n    background-color: white;\n    font-weight: bold;\n    font-style: italic;\n    text-shadow: 2px 2px 3px;\n}\nmain {\n    width: 500px;\n    margin-left: auto;\n    margin-right: auto;\n}\nmain .storyline {\n    text-align: center;\n}\ntable {\n    margin: 0 auto;\n}\ntable tr button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\ntable tr button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e1_buttons {\n    display: inline-block;\n}\n#e1_prompt {\n    display: inline-block;\n}\n#e1_outcome1 {\n    display: none;\n}\n#e1_outcome2 {\n    display: none; \n}\nmain div button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\nmain div button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e2_container2 {\n    display: none;\n}\n#e2_buttons {\n    display: inline-block;\n}\n#e2_prompt {\n    display: inline-block;\n}\n#e2_outcome1 {\n    display: none;\n}\n#e2_outcome2 {\n    display: none; \n}\n#e2_outcome3 {\n    display: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2VlazAyL3dlZWswMi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsd0JBQXdCO0FBQzVCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFHQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvd2VlazAyL3dlZWswMi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJlZCB7XG4gICAgY29sb3I6IHJlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cbi5ibHVlIHtcbiAgICBjb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbn1cbi5ncmVlbiB7XG4gICAgY29sb3I6IGdyZWVuO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICB0ZXh0LXNoYWRvdzogMnB4IDJweCAzcHg7XG59XG5tYWluIHtcbiAgICB3aWR0aDogNTAwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xufVxubWFpbiAuc3RvcnlsaW5lIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG50YWJsZSB7XG4gICAgbWFyZ2luOiAwIGF1dG87XG59XG50YWJsZSB0ciBidXR0b24ge1xuICAgIG1hcmdpbjogNXB4IDA7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBmb250LXNpemU6IDEwcHQ7XG59XG50YWJsZSB0ciBidXR0b246aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNjUsIDY1LCAyMjEpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cbiNlMV9idXR0b25zIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfcHJvbXB0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfb3V0Y29tZTEge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTFfb3V0Y29tZTIge1xuICAgIGRpc3BsYXk6IG5vbmU7IFxufVxubWFpbiBkaXYgYnV0dG9uIHtcbiAgICBtYXJnaW46IDVweCAwO1xuICAgIHBhZGRpbmc6IDVweDtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgZm9udC1zaXplOiAxMHB0O1xufVxubWFpbiBkaXYgYnV0dG9uOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBjb2xvcjogd2hpdGU7XG59XG5cblxuI2UyX2NvbnRhaW5lcjIge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTJfYnV0dG9ucyB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuI2UyX3Byb21wdCB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuI2UyX291dGNvbWUxIHtcbiAgICBkaXNwbGF5OiBub25lO1xufVxuI2UyX291dGNvbWUyIHtcbiAgICBkaXNwbGF5OiBub25lOyBcbn1cbiNlMl9vdXRjb21lMyB7XG4gICAgZGlzcGxheTogbm9uZTtcbn0iXX0= */");
+
 
 /***/ }),
 
@@ -1004,15 +1018,20 @@ let Week02Component = class Week02Component {
         document.getElementById("e1_container1").style.display = 'none';
         document.getElementById("e2_container2").style.display = 'inline-block';
     }
-    e2_correctAnswer() {
+    e2_correctAnswer1() {
         document.getElementById("e2_prompt").style.display = 'none';
         document.getElementById("e2_buttons").style.display = 'none';
         document.getElementById("e2_outcome1").style.display = 'inline-block';
     }
-    e2_incorrectAnswer() {
+    e2_correctAnswer2() {
         document.getElementById("e2_prompt").style.display = 'none';
         document.getElementById("e2_buttons").style.display = 'none';
         document.getElementById("e2_outcome2").style.display = 'inline-block';
+    }
+    e2_incorrectAnswer() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome3").style.display = 'inline-block';
     }
 };
 Week02Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1036,7 +1055,7 @@ Week02Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3dlZWswMy93ZWVrMDMuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = (".red {\n    color: red;\n    background-color: white;\n}\n.blue {\n    color: rgb(65, 65, 221);\n    background-color: white;\n    font-weight: 700;\n    font-style: italic;\n}\n.green {\n    color: green;\n    background-color: white;\n    font-weight: bold;\n    font-style: italic;\n    text-shadow: 2px 2px 3px;\n}\nmain {\n    width: 500px;\n    margin-left: auto;\n    margin-right: auto;\n}\nmain .storyline {\n    text-align: center;\n}\ntable {\n    margin: 0 auto;\n}\ntable tr button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\ntable tr button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e1_buttons {\n    display: inline-block;\n}\n#e1_prompt {\n    display: inline-block;\n}\n#e1_outcome1 {\n    display: none;\n}\n#e1_outcome2 {\n    display: none; \n}\nmain div button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\nmain div button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e2_container2 {\n    display: none;\n}\n#e2_buttons {\n    display: inline-block;\n}\n#e2_prompt {\n    display: inline-block;\n}\n#e2_outcome1 {\n    display: none;\n}\n#e2_outcome2 {\n    display: none; \n}\n#e2_outcome3 {\n    display: none; \n}\n#e2_outcome4 {\n    display: none; \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2VlazAzL3dlZWswMy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsd0JBQXdCO0FBQzVCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFHQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvd2VlazAzL3dlZWswMy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJlZCB7XG4gICAgY29sb3I6IHJlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cbi5ibHVlIHtcbiAgICBjb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbn1cbi5ncmVlbiB7XG4gICAgY29sb3I6IGdyZWVuO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICB0ZXh0LXNoYWRvdzogMnB4IDJweCAzcHg7XG59XG5tYWluIHtcbiAgICB3aWR0aDogNTAwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xufVxubWFpbiAuc3RvcnlsaW5lIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG50YWJsZSB7XG4gICAgbWFyZ2luOiAwIGF1dG87XG59XG50YWJsZSB0ciBidXR0b24ge1xuICAgIG1hcmdpbjogNXB4IDA7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBmb250LXNpemU6IDEwcHQ7XG59XG50YWJsZSB0ciBidXR0b246aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNjUsIDY1LCAyMjEpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cbiNlMV9idXR0b25zIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfcHJvbXB0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfb3V0Y29tZTEge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTFfb3V0Y29tZTIge1xuICAgIGRpc3BsYXk6IG5vbmU7IFxufVxubWFpbiBkaXYgYnV0dG9uIHtcbiAgICBtYXJnaW46IDVweCAwO1xuICAgIHBhZGRpbmc6IDVweDtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgZm9udC1zaXplOiAxMHB0O1xufVxubWFpbiBkaXYgYnV0dG9uOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBjb2xvcjogd2hpdGU7XG59XG5cblxuI2UyX2NvbnRhaW5lcjIge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTJfYnV0dG9ucyB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuI2UyX3Byb21wdCB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuI2UyX291dGNvbWUxIHtcbiAgICBkaXNwbGF5OiBub25lO1xufVxuI2UyX291dGNvbWUyIHtcbiAgICBkaXNwbGF5OiBub25lOyBcbn1cbiNlMl9vdXRjb21lMyB7XG4gICAgZGlzcGxheTogbm9uZTsgXG59XG4jZTJfb3V0Y29tZTQge1xuICAgIGRpc3BsYXk6IG5vbmU7IFxufSJdfQ== */");
 
 /***/ }),
 
@@ -1057,6 +1076,40 @@ __webpack_require__.r(__webpack_exports__);
 let Week03Component = class Week03Component {
     constructor() { }
     ngOnInit() {
+    }
+    e1_correctAnswer() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome1").style.display = 'inline-block';
+    }
+    e1_incorrectAnswer() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome2").style.display = 'inline-block';
+    }
+    nextEvent() {
+        document.getElementById("e1_container1").style.display = 'none';
+        document.getElementById("e2_container2").style.display = 'inline-block';
+    }
+    e2_correctAnswer1() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome1").style.display = 'inline-block';
+    }
+    e2_correctAnswer2() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome2").style.display = 'inline-block';
+    }
+    e2_correctAnswer3() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome3").style.display = 'inline-block';
+    }
+    e2_incorrectAnswer() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome4").style.display = 'inline-block';
     }
 };
 Week03Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1080,7 +1133,7 @@ Week03Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3dlZWswNC93ZWVrMDQuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = (".red {\n    color: red;\n    background-color: white;\n}\n.blue {\n    color: rgb(65, 65, 221);\n    background-color: white;\n    font-weight: 700;\n    font-style: italic;\n}\n.green {\n    color: green;\n    background-color: white;\n    font-weight: bold;\n    font-style: italic;\n    text-shadow: 2px 2px 3px;\n}\nmain {\n    width: 500px;\n    margin-left: auto;\n    margin-right: auto;\n}\nmain .storyline {\n    text-align: center;\n}\ntable {\n    margin: 0 auto;\n}\ntable tr button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\ntable tr button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e1_buttons {\n    display: inline-block;\n}\n#e1_prompt {\n    display: inline-block;\n}\n#e1_outcome1 {\n    display: none;\n}\n#e1_outcome2 {\n    display: none; \n}\nmain div button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\nmain div button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e2_container2 {\n    display: none;\n}\n#e2_buttons {\n    display: inline-block;\n}\n#e2_prompt {\n    display: inline-block;\n}\n#e2_outcome1 {\n    display: none;\n}\n#e2_outcome2 {\n    display: none; \n}\n#e2_outcome3 {\n    display: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2VlazA0L3dlZWswNC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsd0JBQXdCO0FBQzVCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFHQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvd2VlazA0L3dlZWswNC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJlZCB7XG4gICAgY29sb3I6IHJlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cbi5ibHVlIHtcbiAgICBjb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbn1cbi5ncmVlbiB7XG4gICAgY29sb3I6IGdyZWVuO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICB0ZXh0LXNoYWRvdzogMnB4IDJweCAzcHg7XG59XG5tYWluIHtcbiAgICB3aWR0aDogNTAwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xufVxubWFpbiAuc3RvcnlsaW5lIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG50YWJsZSB7XG4gICAgbWFyZ2luOiAwIGF1dG87XG59XG50YWJsZSB0ciBidXR0b24ge1xuICAgIG1hcmdpbjogNXB4IDA7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBmb250LXNpemU6IDEwcHQ7XG59XG50YWJsZSB0ciBidXR0b246aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNjUsIDY1LCAyMjEpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cbiNlMV9idXR0b25zIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfcHJvbXB0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfb3V0Y29tZTEge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTFfb3V0Y29tZTIge1xuICAgIGRpc3BsYXk6IG5vbmU7IFxufVxubWFpbiBkaXYgYnV0dG9uIHtcbiAgICBtYXJnaW46IDVweCAwO1xuICAgIHBhZGRpbmc6IDVweDtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgZm9udC1zaXplOiAxMHB0O1xufVxubWFpbiBkaXYgYnV0dG9uOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBjb2xvcjogd2hpdGU7XG59XG5cblxuI2UyX2NvbnRhaW5lcjIge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTJfYnV0dG9ucyB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuI2UyX3Byb21wdCB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuI2UyX291dGNvbWUxIHtcbiAgICBkaXNwbGF5OiBub25lO1xufVxuI2UyX291dGNvbWUyIHtcbiAgICBkaXNwbGF5OiBub25lOyBcbn1cbiNlMl9vdXRjb21lMyB7XG4gICAgZGlzcGxheTogbm9uZTtcbn0iXX0= */");
 
 /***/ }),
 
@@ -1101,6 +1154,35 @@ __webpack_require__.r(__webpack_exports__);
 let Week04Component = class Week04Component {
     constructor() { }
     ngOnInit() {
+    }
+    e1_correctAnswer() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome1").style.display = 'inline-block';
+    }
+    e1_incorrectAnswer() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome2").style.display = 'inline-block';
+    }
+    nextEvent() {
+        document.getElementById("e1_container1").style.display = 'none';
+        document.getElementById("e2_container2").style.display = 'inline-block';
+    }
+    e2_correctAnswer() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome1").style.display = 'inline-block';
+    }
+    e2_incorrectAnswer1() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome2").style.display = 'inline-block';
+    }
+    e2_incorrectAnswer2() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome3").style.display = 'inline-block';
     }
 };
 Week04Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1124,7 +1206,7 @@ Week04Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3dlZWswNS93ZWVrMDUuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = (".red {\n    color: red;\n    background-color: white;\n}\n.blue {\n    color: rgb(65, 65, 221);\n    background-color: white;\n    font-weight: 700;\n    font-style: italic;\n}\n.green {\n    color: green;\n    background-color: white;\n    font-weight: bold;\n    font-style: italic;\n    text-shadow: 2px 2px 3px;\n}\nmain {\n    width: 500px;\n    margin-left: auto;\n    margin-right: auto;\n}\nmain .storyline {\n    text-align: center;\n}\ntable {\n    margin: 0 auto;\n}\ntable tr button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\ntable tr button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e1_buttons {\n    display: inline-block;\n}\n#e1_prompt {\n    display: inline-block;\n}\n#e1_outcome1 {\n    display: none;\n}\n#e1_outcome2 {\n    display: none; \n}\n#e1_outcome3 {\n    display: none; \n}\n#e1_outcome4 {\n    display: none; \n}\nmain div button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\nmain div button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e2_container2 {\n    display: none;\n}\n#e2_buttons {\n    display: inline-block;\n}\n#e2_prompt {\n    display: inline-block;\n}\n#e2_outcome1 {\n    display: none;\n}\n#e2_outcome2 {\n    display: none; \n}\n#e2_outcome3 {\n    display: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2VlazA1L3dlZWswNS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsd0JBQXdCO0FBQzVCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFHQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvd2VlazA1L3dlZWswNS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJlZCB7XG4gICAgY29sb3I6IHJlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cbi5ibHVlIHtcbiAgICBjb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbn1cbi5ncmVlbiB7XG4gICAgY29sb3I6IGdyZWVuO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICB0ZXh0LXNoYWRvdzogMnB4IDJweCAzcHg7XG59XG5tYWluIHtcbiAgICB3aWR0aDogNTAwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xufVxubWFpbiAuc3RvcnlsaW5lIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG50YWJsZSB7XG4gICAgbWFyZ2luOiAwIGF1dG87XG59XG50YWJsZSB0ciBidXR0b24ge1xuICAgIG1hcmdpbjogNXB4IDA7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBmb250LXNpemU6IDEwcHQ7XG59XG50YWJsZSB0ciBidXR0b246aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNjUsIDY1LCAyMjEpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cbiNlMV9idXR0b25zIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfcHJvbXB0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfb3V0Y29tZTEge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTFfb3V0Y29tZTIge1xuICAgIGRpc3BsYXk6IG5vbmU7IFxufVxuI2UxX291dGNvbWUzIHtcbiAgICBkaXNwbGF5OiBub25lOyBcbn1cbiNlMV9vdXRjb21lNCB7XG4gICAgZGlzcGxheTogbm9uZTsgXG59XG5tYWluIGRpdiBidXR0b24ge1xuICAgIG1hcmdpbjogNXB4IDA7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBmb250LXNpemU6IDEwcHQ7XG59XG5tYWluIGRpdiBidXR0b246aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNjUsIDY1LCAyMjEpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cblxuXG4jZTJfY29udGFpbmVyMiB7XG4gICAgZGlzcGxheTogbm9uZTtcbn1cbiNlMl9idXR0b25zIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTJfcHJvbXB0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTJfb3V0Y29tZTEge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTJfb3V0Y29tZTIge1xuICAgIGRpc3BsYXk6IG5vbmU7IFxufVxuI2UyX291dGNvbWUzIHtcbiAgICBkaXNwbGF5OiBub25lO1xufSJdfQ== */");
 
 /***/ }),
 
@@ -1145,6 +1227,45 @@ __webpack_require__.r(__webpack_exports__);
 let Week05Component = class Week05Component {
     constructor() { }
     ngOnInit() {
+    }
+    e1_correctAnswer() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome1").style.display = 'inline-block';
+    }
+    e1_incorrectAnswer1() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome2").style.display = 'inline-block';
+    }
+    e1_incorrectAnswer2() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome3").style.display = 'inline-block';
+    }
+    e1_incorrectAnswer3() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome4").style.display = 'inline-block';
+    }
+    nextEvent() {
+        document.getElementById("e1_container1").style.display = 'none';
+        document.getElementById("e2_container2").style.display = 'inline-block';
+    }
+    e2_correctAnswer1() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome1").style.display = 'inline-block';
+    }
+    e2_correctAnswer2() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome2").style.display = 'inline-block';
+    }
+    e2_incorrectAnswer() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome3").style.display = 'inline-block';
     }
 };
 Week05Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1168,7 +1289,7 @@ Week05Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3dlZWswNi93ZWVrMDYuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = (".red {\n    color: red;\n    background-color: white;\n}\n.blue {\n    color: rgb(65, 65, 221);\n    background-color: white;\n    font-weight: 700;\n    font-style: italic;\n}\n.green {\n    color: green;\n    background-color: white;\n    font-weight: bold;\n    font-style: italic;\n    text-shadow: 2px 2px 3px;\n}\nmain {\n    width: 500px;\n    margin-left: auto;\n    margin-right: auto;\n}\nmain .storyline {\n    text-align: center;\n}\ntable {\n    margin: 0 auto;\n}\ntable tr button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\ntable tr button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e1_buttons {\n    display: inline-block;\n}\n#e1_prompt {\n    display: inline-block;\n}\n#e1_outcome1 {\n    display: none;\n}\n#e1_outcome2 {\n    display: none; \n}\nmain div button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\nmain div button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e2_container2 {\n    display: none;\n}\n#e2_buttons {\n    display: inline-block;\n}\n#e2_prompt {\n    display: inline-block;\n}\n#e2_outcome1 {\n    display: none;\n}\n#e2_outcome2 {\n    display: none; \n}\n#e2_outcome3 {\n    display: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2VlazA2L3dlZWswNi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsd0JBQXdCO0FBQzVCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFHQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvd2VlazA2L3dlZWswNi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJlZCB7XG4gICAgY29sb3I6IHJlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cbi5ibHVlIHtcbiAgICBjb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbn1cbi5ncmVlbiB7XG4gICAgY29sb3I6IGdyZWVuO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICB0ZXh0LXNoYWRvdzogMnB4IDJweCAzcHg7XG59XG5tYWluIHtcbiAgICB3aWR0aDogNTAwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xufVxubWFpbiAuc3RvcnlsaW5lIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG50YWJsZSB7XG4gICAgbWFyZ2luOiAwIGF1dG87XG59XG50YWJsZSB0ciBidXR0b24ge1xuICAgIG1hcmdpbjogNXB4IDA7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBmb250LXNpemU6IDEwcHQ7XG59XG50YWJsZSB0ciBidXR0b246aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNjUsIDY1LCAyMjEpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cbiNlMV9idXR0b25zIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfcHJvbXB0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfb3V0Y29tZTEge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTFfb3V0Y29tZTIge1xuICAgIGRpc3BsYXk6IG5vbmU7IFxufVxubWFpbiBkaXYgYnV0dG9uIHtcbiAgICBtYXJnaW46IDVweCAwO1xuICAgIHBhZGRpbmc6IDVweDtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgZm9udC1zaXplOiAxMHB0O1xufVxubWFpbiBkaXYgYnV0dG9uOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBjb2xvcjogd2hpdGU7XG59XG5cblxuI2UyX2NvbnRhaW5lcjIge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTJfYnV0dG9ucyB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuI2UyX3Byb21wdCB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuI2UyX291dGNvbWUxIHtcbiAgICBkaXNwbGF5OiBub25lO1xufVxuI2UyX291dGNvbWUyIHtcbiAgICBkaXNwbGF5OiBub25lOyBcbn1cbiNlMl9vdXRjb21lMyB7XG4gICAgZGlzcGxheTogbm9uZTtcbn0iXX0= */");
 
 /***/ }),
 
@@ -1189,6 +1310,35 @@ __webpack_require__.r(__webpack_exports__);
 let Week06Component = class Week06Component {
     constructor() { }
     ngOnInit() {
+    }
+    e1_correctAnswer() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome1").style.display = 'inline-block';
+    }
+    e1_incorrectAnswer() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome2").style.display = 'inline-block';
+    }
+    nextEvent() {
+        document.getElementById("e1_container1").style.display = 'none';
+        document.getElementById("e2_container2").style.display = 'inline-block';
+    }
+    e2_correctAnswer1() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome1").style.display = 'inline-block';
+    }
+    e2_correctAnswer2() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome2").style.display = 'inline-block';
+    }
+    e2_incorrectAnswer() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome3").style.display = 'inline-block';
     }
 };
 Week06Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1212,7 +1362,7 @@ Week06Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3dlZWswNy93ZWVrMDcuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = (".red {\n    color: red;\n    background-color: white;\n}\n.blue {\n    color: rgb(65, 65, 221);\n    background-color: white;\n    font-weight: 700;\n    font-style: italic;\n}\n.green {\n    color: green;\n    background-color: white;\n    font-weight: bold;\n    font-style: italic;\n    text-shadow: 2px 2px 3px;\n}\nmain {\n    width: 500px;\n    margin-left: auto;\n    margin-right: auto;\n}\nmain .storyline {\n    text-align: center;\n}\ntable {\n    margin: 0 auto;\n}\ntable tr button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\ntable tr button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e1_buttons {\n    display: inline-block;\n}\n#e1_prompt {\n    display: inline-block;\n}\n#e1_outcome1 {\n    display: none;\n}\n#e1_outcome2 {\n    display: none; \n}\nmain div button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\nmain div button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e2_container2 {\n    display: none;\n}\n#e2_buttons {\n    display: inline-block;\n}\n#e2_prompt {\n    display: inline-block;\n}\n#e2_outcome1 {\n    display: none;\n}\n#e2_outcome2 {\n    display: none; \n}\n#e2_outcome3 {\n    display: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2VlazA3L3dlZWswNy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsd0JBQXdCO0FBQzVCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFHQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvd2VlazA3L3dlZWswNy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJlZCB7XG4gICAgY29sb3I6IHJlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cbi5ibHVlIHtcbiAgICBjb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbn1cbi5ncmVlbiB7XG4gICAgY29sb3I6IGdyZWVuO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICB0ZXh0LXNoYWRvdzogMnB4IDJweCAzcHg7XG59XG5tYWluIHtcbiAgICB3aWR0aDogNTAwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xufVxubWFpbiAuc3RvcnlsaW5lIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG50YWJsZSB7XG4gICAgbWFyZ2luOiAwIGF1dG87XG59XG50YWJsZSB0ciBidXR0b24ge1xuICAgIG1hcmdpbjogNXB4IDA7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBmb250LXNpemU6IDEwcHQ7XG59XG50YWJsZSB0ciBidXR0b246aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNjUsIDY1LCAyMjEpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cbiNlMV9idXR0b25zIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfcHJvbXB0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfb3V0Y29tZTEge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTFfb3V0Y29tZTIge1xuICAgIGRpc3BsYXk6IG5vbmU7IFxufVxubWFpbiBkaXYgYnV0dG9uIHtcbiAgICBtYXJnaW46IDVweCAwO1xuICAgIHBhZGRpbmc6IDVweDtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgZm9udC1zaXplOiAxMHB0O1xufVxubWFpbiBkaXYgYnV0dG9uOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBjb2xvcjogd2hpdGU7XG59XG5cblxuI2UyX2NvbnRhaW5lcjIge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTJfYnV0dG9ucyB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuI2UyX3Byb21wdCB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuI2UyX291dGNvbWUxIHtcbiAgICBkaXNwbGF5OiBub25lO1xufVxuI2UyX291dGNvbWUyIHtcbiAgICBkaXNwbGF5OiBub25lOyBcbn1cbiNlMl9vdXRjb21lMyB7XG4gICAgZGlzcGxheTogbm9uZTtcbn0iXX0= */");
 
 /***/ }),
 
@@ -1233,6 +1383,35 @@ __webpack_require__.r(__webpack_exports__);
 let Week07Component = class Week07Component {
     constructor() { }
     ngOnInit() {
+    }
+    e1_correctAnswer() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome1").style.display = 'inline-block';
+    }
+    e1_incorrectAnswer() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome2").style.display = 'inline-block';
+    }
+    nextEvent() {
+        document.getElementById("e1_container1").style.display = 'none';
+        document.getElementById("e2_container2").style.display = 'inline-block';
+    }
+    e2_incorrectAnswer1() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome1").style.display = 'inline-block';
+    }
+    e2_incorrectAnswer2() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome2").style.display = 'inline-block';
+    }
+    e2_correctAnswer() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome3").style.display = 'inline-block';
     }
 };
 Week07Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1256,7 +1435,7 @@ Week07Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3dlZWswOC93ZWVrMDguY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = (".red {\n    color: red;\n    background-color: white;\n}\n.blue {\n    color: rgb(65, 65, 221);\n    background-color: white;\n    font-weight: 700;\n    font-style: italic;\n}\n.green {\n    color: green;\n    background-color: white;\n    font-weight: bold;\n    font-style: italic;\n    text-shadow: 2px 2px 3px;\n}\nmain {\n    width: 500px;\n    margin-left: auto;\n    margin-right: auto;\n}\nmain .storyline {\n    text-align: center;\n}\ntable {\n    margin: 0 auto;\n}\ntable tr button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\ntable tr button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e1_buttons {\n    display: inline-block;\n}\n#e1_prompt {\n    display: inline-block;\n}\n#e1_outcome1 {\n    display: none;\n}\n#e1_outcome2 {\n    display: none; \n}\n#e1_outcome3 {\n    display: none; \n}\nmain div button {\n    margin: 5px 0;\n    padding: 5px;\n    border-radius: 5px;\n    font-size: 10pt;\n}\nmain div button:hover {\n    cursor: pointer;\n    background-color: rgb(65, 65, 221);\n    color: white;\n}\n#e2_container2 {\n    display: none;\n}\n#e2_buttons {\n    display: inline-block;\n}\n#e2_prompt {\n    display: inline-block;\n}\n#e2_outcome1 {\n    display: none;\n}\n#e2_outcome2 {\n    display: none; \n}\n#e2_outcome3 {\n    display: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2VlazA4L3dlZWswOC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsd0JBQXdCO0FBQzVCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2Ysa0NBQWtDO0lBQ2xDLFlBQVk7QUFDaEI7QUFHQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvd2VlazA4L3dlZWswOC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJlZCB7XG4gICAgY29sb3I6IHJlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cbi5ibHVlIHtcbiAgICBjb2xvcjogcmdiKDY1LCA2NSwgMjIxKTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbn1cbi5ncmVlbiB7XG4gICAgY29sb3I6IGdyZWVuO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICB0ZXh0LXNoYWRvdzogMnB4IDJweCAzcHg7XG59XG5tYWluIHtcbiAgICB3aWR0aDogNTAwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xufVxubWFpbiAuc3RvcnlsaW5lIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG50YWJsZSB7XG4gICAgbWFyZ2luOiAwIGF1dG87XG59XG50YWJsZSB0ciBidXR0b24ge1xuICAgIG1hcmdpbjogNXB4IDA7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBmb250LXNpemU6IDEwcHQ7XG59XG50YWJsZSB0ciBidXR0b246aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNjUsIDY1LCAyMjEpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cbiNlMV9idXR0b25zIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfcHJvbXB0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG4jZTFfb3V0Y29tZTEge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4jZTFfb3V0Y29tZTIge1xuICAgIGRpc3BsYXk6IG5vbmU7IFxufVxuI2UxX291dGNvbWUzIHtcbiAgICBkaXNwbGF5OiBub25lOyBcbn1cbm1haW4gZGl2IGJ1dHRvbiB7XG4gICAgbWFyZ2luOiA1cHggMDtcbiAgICBwYWRkaW5nOiA1cHg7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIGZvbnQtc2l6ZTogMTBwdDtcbn1cbm1haW4gZGl2IGJ1dHRvbjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYig2NSwgNjUsIDIyMSk7XG4gICAgY29sb3I6IHdoaXRlO1xufVxuXG5cbiNlMl9jb250YWluZXIyIHtcbiAgICBkaXNwbGF5OiBub25lO1xufVxuI2UyX2J1dHRvbnMge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbn1cbiNlMl9wcm9tcHQge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbn1cbiNlMl9vdXRjb21lMSB7XG4gICAgZGlzcGxheTogbm9uZTtcbn1cbiNlMl9vdXRjb21lMiB7XG4gICAgZGlzcGxheTogbm9uZTsgXG59XG4jZTJfb3V0Y29tZTMge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59Il19 */");
 
 /***/ }),
 
@@ -1277,6 +1456,35 @@ __webpack_require__.r(__webpack_exports__);
 let Week08Component = class Week08Component {
     constructor() { }
     ngOnInit() {
+    }
+    e1_correctAnswer1() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome1").style.display = 'inline-block';
+    }
+    e1_correctAnswer2() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome2").style.display = 'inline-block';
+    }
+    e1_incorrectAnswer() {
+        document.getElementById("e1_prompt").style.display = 'none';
+        document.getElementById("e1_buttons").style.display = 'none';
+        document.getElementById("e1_outcome3").style.display = 'inline-block';
+    }
+    nextEvent() {
+        document.getElementById("e1_container1").style.display = 'none';
+        document.getElementById("e2_container2").style.display = 'inline-block';
+    }
+    e2_correctAnswer1() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome1").style.display = 'inline-block';
+    }
+    e2_incorrectAnswer() {
+        document.getElementById("e2_prompt").style.display = 'none';
+        document.getElementById("e2_buttons").style.display = 'none';
+        document.getElementById("e2_outcome2").style.display = 'inline-block';
     }
 };
 Week08Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1890,7 +2098,9 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\starv\OneDrive\Desktop\git-branches\mean_project\public\src\main.ts */"./src/main.ts");
+
+module.exports = __webpack_require__(/*! /Users/jackross/Desktop/coding_dojo/projects/coding_adventure/public/src/main.ts */"./src/main.ts");
+
 
 
 /***/ })
