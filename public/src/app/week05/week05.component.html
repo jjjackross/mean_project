@@ -43,27 +43,30 @@
 <!-- EVENT TWO -->
 <div id="e2_container2">
     <main>
-        <p id="e2_prompt" class="storyline">"PROMPT"</p>
+        <p id="e2_prompt" class="storyline">Python exam time! <mark class="blue">Make your move...</mark></p>
         <div id="e2_outcome1">
-            <p class="storyline">"OUTCOME1"</p>
-            <button [routerLink]="['/week03']">Continue</button>
+            <p class="storyline">WOW! <mark class="green">You flew through the exam and even got a black belt!</mark>
+            </p>
+            <button [routerLink]="['/week06']">Continue</button>
         </div>
         <div id="e2_outcome2">
-            <p class="storyline">"OUTCOME2"</p> <button [routerLink]="['/week03']">Continue</button>
+            <p class="storyline">Ryan says yes. <mark class="blue">You take the exam monday and pass with a red belt
+                    after slacking off all weekend.</mark></p> <button [routerLink]="['/week06']">Continue</button>
+        </div>
+        <div id="e2_outcome3">
+            <p class="storyline"><mark class="red">You get an F on the exam, and the course.</mark> What did you expect
+                to happen?</p> <button [routerLink]="['/gameover']">Game Over</button>
         </div>
     </main>
     <table id="e2_buttons">
         <tr>
-            <button (click)="e2_incorrectAnswer()">"ANSWER1"</button>
+            <button (click)="e2_correctAnswer()">Take the exam</button>
         </tr>
         <tr>
-            <button (click)="e2_correctAnswer()">"ANSWER2"</button>
+            <button (click)="e2_incorrectAnswer1()">Ask if you can take it monday</button>
         </tr>
         <tr>
-            <button (click)="e2_incorrectAnswer()">"ANSWER3"</button>
-        </tr>
-        <tr>
-            <button (click)="e2_incorrectAnswer()">"ANSWER4"</button>
+            <button (click)="e2_incorrectAnswer2()">Leave class and never look back</button>
         </tr>
     </table>
 </div>

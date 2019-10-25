@@ -1,28 +1,27 @@
 <!-- EVENT ONE -->
 <div id="e1_container1">
     <main>
-        <p id="e1_prompt" class="storyline">"PROMPT"</p>
+        <p id="e1_prompt" class="storyline">Your first project week is here! <mark class="blue">What will you do for
+                your project?</mark></p>
         <div id="e1_outcome1">
-            <p class="storyline">"OUTCOME1"</p>
+            <p class="storyline"><mark class="green">Great choice!</mark> Both easy and cool!</p>
             <button (click)="nextEvent()">Continue</button>
         </div>
         <div id="e1_outcome2">
-            <p class="storyline">"OUTCOME2"</p>
+            <p class="storyline"><mark class="blue">Interesting choice...</mark> a bit challenging, but I'm sure you can
+                handle it.</p>
             <button (click)="nextEvent()">Continue</button>
         </div>
     </main>
     <table id="e1_buttons">
         <tr>
-            <button (click)="e1_incorrectAnswer()">"ANSWER1"</button>
+            <button (click)="e1_incorrectAnswer()">Teach a machine to solve a rubiks cube</button>
         </tr>
         <tr>
-            <button (click)="e1_correctAnswer()">"ANSWER2"</button>
+            <button (click)="e1_correctAnswer()">A data visualizer</button>
         </tr>
         <tr>
-            <button (click)="e1_incorrectAnswer()">"ANSWER3"</button>
-        </tr>
-        <tr>
-            <button (click)="e1_incorrectAnswer()">"ANSWER4"</button>
+            <button (click)="e1_incorrectAnswer()">A facial recognition platform</button>
         </tr>
     </table>
 </div>
@@ -30,27 +29,35 @@
 <!-- EVENT TWO -->
 <div id="e2_container2">
     <main>
-        <p id="e2_prompt" class="storyline">"PROMPT"</p>
+        <p id="e2_prompt" class="storyline">It's almost presentation time. <mark class="blue">Which good luck ritual
+                will you
+                perform today?</mark></p>
         <div id="e2_outcome1">
-            <p class="storyline">"OUTCOME1"</p>
-            <button [routerLink]="['/week03']">Continue</button>
+            <p class="storyline"><mark class="green">You have been blessed by the twerk gods.</mark> Your presentation
+                goes flawlessly!</p>
+            <button [routerLink]="['/week07']">Continue</button>
         </div>
         <div id="e2_outcome2">
-            <p class="storyline">"OUTCOME2"</p> <button [routerLink]="['/week03']">Continue</button>
+            <p class="storyline"><mark class="blue">Michael Choi ignores your prayers.</mark> The presentation still
+                went well though.</p> <button [routerLink]="['/week07']">Continue</button>
+        </div>
+        <div id="e2_outcome3">
+            <p class="storyline">You were tied with yourself 1-1 and going into the 3rd game. You lose in the 3rd game
+                during triple over-time. <mark class="red">Sad and defeated, you don't want to present anymore. You
+                    leave class early today.
+                </mark></p> <button [routerLink]="['/week07']">Continue</button>
         </div>
     </main>
     <table id="e2_buttons">
         <tr>
-            <button (click)="e2_incorrectAnswer()">"ANSWER1"</button>
+            <button (click)="e2_correctAnswer()">The good luck twerk</button>
         </tr>
         <tr>
-            <button (click)="e2_correctAnswer()">"ANSWER2"</button>
+            <button (click)="e2_incorrectAnswer1()">Pray to your mini Michael Choi shrine</button>
         </tr>
         <tr>
-            <button (click)="e2_incorrectAnswer()">"ANSWER3"</button>
-        </tr>
-        <tr>
-            <button (click)="e2_incorrectAnswer()">"ANSWER4"</button>
+            <button (click)="e2_incorrectAnswer2()">Put half of the ping pong table up and play yourself in a best of
+                3</button>
         </tr>
     </table>
 </div>
