@@ -1,0 +1,11 @@
+#blink3{
+    animation:blinkingText 3s infinite;
+    font-size: 40pt
+}
+@keyframes blinkingText{
+    0%{ color: green;}
+    49%{    color: transparent; }
+    50%{    color: green; }
+    99%{    color:green;  }
+    100%{   color: green;    }
+}

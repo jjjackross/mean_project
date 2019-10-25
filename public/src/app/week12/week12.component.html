@@ -1,1 +1,72 @@
-<p>week12 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+        <main>
+            <p id="e1_prompt" class="storyline">You come into class for the day and when you boot up your computer you find that the wifi is out for the entire building. This so going to make getting your work done a bit difficult. Do you... 
+            </p>
+            <div id="e1_outcome1">
+                <p class="storyline">That nap sure did feel good, but <mark class="red">past you has screwed you over again and it looks like the wifi has been back up for hours.</mark></p>
+                <button (click)="nextEvent()">Continue</button>
+            </div>
+            <div id="e1_outcome2">
+                <p class="storyline"><mark class="blue">Ryan just stares at you for a moment and walks away. </mark> 
+                </p>
+                <button (click)="nextEvent()">Continue</button>
+            </div>
+            <div id="e1_outcome3">
+                <p class="storyline">They text is a bit difficult to read, but you are able to start working on your assignments for the day. <mark class='green'>When lecture comes you are able to keep up and understand the material.</mark> </p>
+                <button (click)="nextEvent()">Continue</button>
+            </div>
+            <div id="e1_outcome4">
+                <p class="storyline">You have always preferred games where you have to use your head. Chris is a challenging opponent, <mark class="green">but you are able to take the win when he finally falls for your carefully laid traps.</mark></p>
+                <button (click)="nextEvent()">Continue</button>
+            </div>    
+        </main>
+        <table id="e1_buttons">
+            <tr>
+                <button (click)="e1_incorrectAnswer2()">Take a nap figuring this is a problem for future you </button>
+            </tr>
+            <tr>
+                <button (click)="e1_correctAnswer()">Complain to Ryan till he fixes it </button>
+            </tr>
+            <tr>
+                <button (click)="e1_incorrectAnswer()">Pull out your phone and use some of your data to get your assignment from the Dojo website. </button>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- EVENT TWO -->
+    <div id="e2_container2">
+            <main>
+                <embed src="assets/audio/Demo.wav" loop="false" autostart="true" hidden="true">
+                <p id="e2_prompt" class="storyline">It’s that time of the day. When the lights are turned down low. Its D-D-D-D-Demo after Dark-ark-ark-ark-ark.</p>
+                <img src="/public/src/app/week11/algo.png" alt="">
+                <div id="e2_outcome1">
+                    <p class="storyline"><mark class="red">"What do you mean in was in the demo?"</mark>two nap choices in a row? The writer is getting lazy...</p>
+                    <button [routerLink]="['/week13']">Continue</button>
+                </div>
+                <div id="e2_outcome2">
+                    <p class="storyline">By doing a code along with the demo you understand C# better.<mark class='green'> This will be a big help in the exam to come.</mark></p>
+                    <button [routerLink]="['/week13']">Continue</button>
+                </div>
+                <div id="e2_outcome3">
+                    <p class="storyline"><mark class='red'>Hopefully what was on the demo won't be on the exam.</mark><mark class='green'> At least you grew 2 more levels in Gwent</mark></p>
+                    <button [routerLink]="['/week13']">Continue</button>
+                </div>
+                <div id="e2_outcome4">
+                    <p class="storyline">In your head you hear a booming voice. "We have heard your prayer and will give you the knowledge you seek! In a sudden flash you understand MEAN perfectly and pass the exam with a black belt.<mark class='green'> You can’t believe that worked!</mark> 
+                    </p>
+                    <button [routerLink]="['/week13']">Continue</button>
+                </div>
+            </main>
+            <table id="e2_buttons">
+                <tr>
+                    <button (click)="e2_incorrectAnswer()">Takes this time in the dark to nap</button>
+                </tr>
+                <tr>
+                    <button (click)="e2_correctAnswer()">Pay attention to the demo and learn something</button>
+                </tr>
+                <tr>
+                    <button (click)="e2_incorrectAnswer2()">This should take about an hour or so. Plenty of time to get some game time in on my phone</button>
+                </tr>
+            </table>
+        </div>
