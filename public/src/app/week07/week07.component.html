@@ -1,1 +1,58 @@
-<p>week07 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+    <main>
+        <p id="e1_prompt" class="storyline">Using MEAN, <mark class="blue">how do you include a parameter in
+                routes?</mark></p>
+        <div id="e1_outcome1">
+            <p class="storyline"><mark class="green">Correct!</mark> You're a coding wizard!</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome2">
+            <p class="storyline"><mark class="red">Wrong.</mark> Do we need to go over routing again?</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+    </main>
+    <table id="e1_buttons">
+        <tr>
+            <button (click)="e1_incorrectAnswer()">"some-route/~~param~~"</button>
+        </tr>
+        <tr>
+            <button (click)="e1_correctAnswer()">"some-route/:param"</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer()">"some-route/$#param"</button>
+        </tr>
+    </table>
+</div>
+
+<!-- EVENT TWO -->
+<div id="e2_container2">
+    <main>
+        <p id="e2_prompt" class="storyline">Remember node? Remember using NPM in your commands every day? Well <mark
+                class="blue">what does NPM stand for?</mark></p>
+        <div id="e2_outcome1">
+            <p class="storyline">Close! We know "Node Piece Maker" might sound all fancy and correct, but alas, it means
+                nothing.
+                <mark class="red">You fail.</mark></p> <button [routerLink]="['/week08']">Continue</button>
+        </div>
+        <div id="e2_outcome2">
+            <p class="storyline">Seriously? Did you seriously think this was the right answer? I bet you don't make it
+                past week 8... <mark class="red">Next!</mark></p> <button [routerLink]="['/week08']">Continue</button>
+        </div>
+        <div id="e2_outcome3">
+            <p class="storyline"><mark class="green">You got it!</mark> I must say I am quite surprised... in a good
+                way, of course.</p> <button [routerLink]="['/week08']">Continue</button>
+        </div>
+    </main>
+    <table id="e2_buttons">
+        <tr>
+            <button (click)="e2_incorrectAnswer1()">Node Piece Maker</button>
+        </tr>
+        <tr>
+            <button (click)="e2_incorrectAnswer2()">Nude Penguins Mating</button>
+        </tr>
+        <tr>
+            <button (click)="e2_correctAnswer()">Node Package Manager</button>
+        </tr>
+    </table>
+</div>

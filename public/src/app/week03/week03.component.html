@@ -31,27 +31,41 @@
 <!-- EVENT TWO -->
 <div id="e2_container2">
     <main>
-        <p id="e2_prompt" class="storyline">"PROMPT"</p>
+        <p id="e2_prompt" class="storyline">You're sitting front row during a lecture with instructor Ryan. After
+            introducing a new topic that you don't understand, Ryan decides to crack a joke, a joke that you also don't
+            understand. <mark class="blue">How will you react to instructor Ryan's joke?</mark></p>
         <div id="e2_outcome1">
-            <p class="storyline">"OUTCOME1"</p>
-            <button [routerLink]="['/week03']">Continue</button>
+            <p class="storyline"><mark class="green">It works!</mark> Maybe you should go into acting...</p> <button
+                [routerLink]="['/week04']">Continue</button>
         </div>
         <div id="e2_outcome2">
-            <p class="storyline">"OUTCOME2"</p> <button [routerLink]="['/week04']">Continue</button>
+            <p class="storyline">The entire dojo falls silent and everyone stares at you. After a long pause of awkward
+                silence Ryan continues his lecture... <mark class="blue">success?</mark></p> <button
+                [routerLink]="['/week04']">Continue</button>
+        </div>
+        <div id="e2_outcome3">
+            <p class="storyline">Ryan responds with an equally blank stare. <mark class="blue">Looks like a staring
+                    contest is on!</mark></p>
+            <button [routerLink]="['/week04']">Continue</button>
+        </div>
+        <div id="e2_outcome4">
+            <p class="storyline">Bullies aren't allowed at the coding dojo. Bullies get dropped from the dojo. <mark
+                    class="red">You got dropped from the dojo.</mark></p> <button [routerLink]="['/gameover']">Game
+                Over</button>
         </div>
     </main>
     <table id="e2_buttons">
         <tr>
-            <button (click)="e2_incorrectAnswer()">"ANSWER1"</button>
+            <button (click)="e2_correctAnswer1()">Fake a laugh</button>
         </tr>
         <tr>
-            <button (click)="e2_correctAnswer()">"ANSWER2"</button>
+            <button (click)="e2_correctAnswer2()">Laugh maniacally</button>
         </tr>
         <tr>
-            <button (click)="e2_incorrectAnswer()">"ANSWER3"</button>
+            <button (click)="e2_correctAnswer3()">Give Ryan a blank stare</button>
         </tr>
         <tr>
-            <button (click)="e2_incorrectAnswer()">"ANSWER4"</button>
+            <button (click)="e2_incorrectAnswer()">Tell instructor Ryan that his joke was bad</button>
         </tr>
     </table>
 </div>
