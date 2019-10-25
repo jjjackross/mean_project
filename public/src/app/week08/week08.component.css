@@ -1,0 +1,85 @@
+.red {
+    color: red;
+    background-color: white;
+}
+.blue {
+    color: rgb(65, 65, 221);
+    background-color: white;
+    font-weight: 700;
+    font-style: italic;
+}
+.green {
+    color: green;
+    background-color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 3px;
+}
+main {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main .storyline {
+    text-align: center;
+}
+table {
+    margin: 0 auto;
+}
+table tr button {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10pt;
+}
+table tr button:hover {
+    cursor: pointer;
+    background-color: rgb(65, 65, 221);
+    color: white;
+}
+#e1_buttons {
+    display: inline-block;
+}
+#e1_prompt {
+    display: inline-block;
+}
+#e1_outcome1 {
+    display: none;
+}
+#e1_outcome2 {
+    display: none; 
+}
+#e1_outcome3 {
+    display: none; 
+}
+main div button {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10pt;
+}
+main div button:hover {
+    cursor: pointer;
+    background-color: rgb(65, 65, 221);
+    color: white;
+}
+
+
+#e2_container2 {
+    display: none;
+}
+#e2_buttons {
+    display: inline-block;
+}
+#e2_prompt {
+    display: inline-block;
+}
+#e2_outcome1 {
+    display: none;
+}
+#e2_outcome2 {
+    display: none; 
+}
+#e2_outcome3 {
+    display: none;
+}
