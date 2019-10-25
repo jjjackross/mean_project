@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class GameoverComponent implements OnInit {
 
   constructor() { }
-
+  
   ngOnInit() {
+   
   }
+
 
 }

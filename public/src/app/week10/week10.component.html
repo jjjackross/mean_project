@@ -1,1 +1,55 @@
-<p>week10 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+    <main>
+        <p id="e1_prompt" class="storyline">Time for the second project week! What kind of idea do you come up with this time? </p>
+        <div id="e1_outcome1">
+            <p class="storyline">Seems like a strange choice. I guess we will see how that works out for you.</p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome2">
+            <p class="storyline">The people must know the truth!! 
+            </p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome3">
+            <p class="storyline">People love cheese! This couldn’t go wrong! </p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+    </main>
+    <table id="e1_buttons">
+        <tr>
+            <button (click)="e1_incorrectAnswer2()">A choose your own adventure game.</button>
+        </tr>
+        <tr>
+            <button (click)="e1_correctAnswer()">An app that hacks the pentagon to looking for classified files on Aliens.</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer()">An app that tells you if cheese is good by taking a photo of it </button>
+        </tr>
+    </table>
+</div>
+
+<!-- EVENT TWO -->
+<div id="e2_container2">
+        <main>
+            <p id="e2_prompt" class="storyline">Time to present your project!</p>
+            <div id="e2_outcome1">
+                <p class="storyline">Your presentation goes well. You classmates think it was a fun idea and some of your goofy events even get a few laughs. <mark class='green'>Adrian is madly impressed and deep down you know he thinks you are his favorite student.</mark> </p>
+                <button [routerLink]="['/week11']">Continue</button>
+            </div>
+            <div id="e2_outcome2">
+                <p class="storyline">The cheese app works great! You do a double-blind test to show that it can tell which cheese has gone bad. You take a big bite of the cheese that app says is good and......<mark class='red'> spit it out immediately as you can taste the mold. Back to the drawing board on this app... </mark></p>
+                <button [routerLink]="['/week11']">Continue</button>
+            </div>
+            <div id="e2_outcome3">
+                <p class="storyline">Your presentation is going well when you hear the sound of boots on the wooden floor. <mark class='red'>Around the corner four men in suits walk up to you and put a bag over your head. They drag you out of the dojo and tell everyone watching to “have a nice day”.</mark></p>
+                <button [routerLink]="['/gameover']">Continue</button>
+            </div>
+        </main>
+        <table id="e2_buttons">
+            <tr>
+                <button (click)="present()">Present</button>
+            </tr>
+            
+        </table>
+    </div>

@@ -1,1 +1,71 @@
-<p>week13 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+        <main>
+            <p id="e1_prompt" class="storyline">You wake up at your home and look out the window. All that you can see is white as snow continues to fall in clumps from the sky. What do you decided to do? 
+            </p>
+            <div id="e1_outcome1">
+                <p class="storyline">After checking Slack you see that class has been canceled. <mark class='green'>You work on your assignments at home with a mug of hot coco.</mark></p>
+                <button (click)="nextEvent()">Continue</button>
+            </div>
+            <div id="e1_outcome2">
+                <p class="storyline"><mark class="red">You brave the blizzard and try and make it down town. You collapse from exhaustion. You wake up 1000 years later as you are being defrosted by intelligent otters who wish to learn more about the past form you. </mark> 
+                </p>
+                <button [routerLink]="['/gameover']">Continue</button>
+            </div>
+            <div id="e1_outcome3">
+                <p class="storyline">You get a nice buzz going will sledding down the hills and you have a great time. <mark class='red'>When class starts back up you are surprised to see everyone else in class ahead of you.</mark></p>
+                <button (click)="nextEvent()">Continue</button>
+            </div>
+            <div id="e1_outcome4">
+                <p class="storyline">You have always preferred games where you have to use your head. Chris is a challenging opponent, <mark class="green">but you are able to take the win when he finally falls for your carefully laid traps.</mark></p>
+                <button (click)="nextEvent()">Continue</button>
+            </div>    
+        </main>
+        <table id="e1_buttons">
+            <tr>
+                <button (click)="e1_incorrectAnswer2()">Check Slack to see if classes are canceled and to see what assignments you should be doing at home if they are</button>
+            </tr>
+            <tr>
+                <button (click)="e1_correctAnswer()">Head to class in the blizzard and hope for the best</button>
+            </tr>
+            <tr>
+                <button (click)="e1_incorrectAnswer()">Stay at home and enjoy a snow day like you did back in the day! Make some beer and sledding</button>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- EVENT TWO -->
+    <div id="e2_container2">
+            <main>
+                <p id="e2_prompt" class="storyline">This is it. The last Exam. You have trained 13 weeks for this. You are ready!</p>
+                <img src="/public/src/app/week11/algo.png" alt="">
+                <div id="e2_outcome1">
+                    <p class="storyline"><mark class="green"> Great job! You pass! I knew you could do it! </mark></p>
+                    <button [routerLink]="['/week14']">Continue</button>
+                </div>
+                <div id="e2_outcome2">
+                    <p class="storyline"><mark class='blue'>You read the button. I got nothing. </mark></p>
+                    <button [routerLink]="['/week14']">Continue</button>
+                </div>
+                <div id="e2_outcome3">
+                    <p class="storyline"><mark class='red'>Ryan looks at you then reports you to Ann. You are removed from the Dojo and don’t graduate.</mark><mark class='blue'>Really? This is the choice you went with. </mark></p>
+                    <button [routerLink]="['/gameover']">Continue</button>
+                </div>
+                <div id="e2_outcome4">
+                    <p class="storyline">In your head you hear a booming voice. "We have heard your prayer and will give you the knowledge you seek! In a sudden flash you understand MEAN perfectly and pass the exam with a black belt.<mark class='green'> You can’t believe that worked!</mark> 
+                    </p>
+                    <button [routerLink]="['/week14']">Continue</button>
+                </div>
+            </main>
+            <table id="e2_buttons">
+                <tr>
+                    <button (click)="e2_incorrectAnswer()">This is a MEAN project so I haven’t taken C# yet and no idea what to put.... </button>
+                </tr>
+                <tr>
+                    <button (click)="e2_correctAnswer()">Slip Ryan a Benjamin to take the exam for you</button>
+                </tr>
+                <tr>
+                    <button (click)="e2_incorrectAnswer2()">You made it this far, odds are good you’ll pass</button>
+                </tr>
+            </table>
+        </div>

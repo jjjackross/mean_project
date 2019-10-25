@@ -1,1 +1,66 @@
-<p>week09 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+    <main>
+        <p id="e1_prompt" class="storyline">So much information is given to you for Angular and you wonder how you will ever grasp it all in just 4 days before the exam. <mark class='red'>You stress is mounting</mark> and you have to decided what you are going to do! 
+        </p>
+        <div id="e1_outcome1">
+            <p class="storyline">You head home early hoping that things will just work themselves out. The next day you feel even farther behind and <mark class="red">you start to think that heading home may not have been the smartest decision.</mark> </p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome2">
+            <p class="storyline">After staying till the Dojo closes each day you start to feel like you have a grasp of angular and all its moving parts. You aren’t sure about the exam coming up, but<mark class="green"> you feel like you have learned a lot in this short time.</mark> 
+            </p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome3">
+            <p class="storyline"><mark class="red">Nothing happens.... </mark></p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+    </main>
+    <table id="e1_buttons">
+        <tr>
+            <button (click)="e1_incorrectAnswer2()">Call it a day and head home early.</button>
+        </tr>
+        <tr>
+            <button (click)="e1_correctAnswer()">Stay late and work with the instructors and TA's.</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer()">Pray to the Angular gods for divine intervention.</button>
+        </tr>
+    </table>
+</div>
+
+<!-- EVENT TWO -->
+<div id="e2_container2">
+        <main>
+            <p id="e2_prompt" class="storyline">It is exam time once again and this feels like a tough one. You feel prepared until you type in the password and panic when you see that you need an associated Schema between movies and their reviews. How do you write that again...? </p>
+            <div id="e2_outcome1">
+                <p class="storyline">Nothing happends and you fail the exam.<mark class="red"> Did you really think that would work?</mark></p>
+                <button [routerLink]="['/gameover']">Continue</button>
+            </div>
+            <div id="e2_outcome2">
+                <p class="storyline">You got it! Once you rember that everything comes to you. You work hard and are able to<mark class="green"> pass the exam and move on to the C# stack!</mark></p>
+                <button [routerLink]="['/week10']">Continue</button>
+            </div>
+            <div id="e2_outcome3">
+                <p class="storyline"><mark class="red">Not quite.</mark> You fail your first attempt, but learn from your mistakes and when you take the exam a second time you <mark class="green">pass the exam and move on to the C# stack.</mark> </p>
+                <button [routerLink]="['/week10']">Continue</button>
+            </div>
+            <div id="e2_outcome4">
+                <p class="storyline">In your head you hear a booming voice. "We have heard your prayer and will give you the knowledge you seek! In a sudden flash you understand MEAN perfectly and pass the exam with a black belt.<mark class='green'> You can’t believe that worked!</mark> 
+                </p>
+                <button [routerLink]="['/week10']">Continue</button>
+            </div>
+        </main>
+        <table id="e2_buttons">
+            <tr>
+                <button (click)="e2_incorrectAnswer()">Pray to the Angular gods!</button>
+            </tr>
+            <tr>
+                <button (click)="e2_correctAnswer()">reviews: [ReviewSchema]</button>
+            </tr>
+            <tr>
+                <button (click)="e2_incorrectAnswer2()">reviews: [MovieSchema]</button>
+            </tr>
+        </table>
+    </div>

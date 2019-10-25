@@ -1,1 +1,72 @@
-<p>week11 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+    <main>
+        <p id="e1_prompt" class="storyline">With C# starting you have a lighter work load and the students decided to have a ping pong tournament. Will you sign up and compete?
+        </p>
+        <div id="e1_outcome1">
+            <p class="storyline">You have always preferred games where you have to use your head. <mark class="red">Chris quickly takes your king as he reminds you why the chess board is on his desk.</mark></p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome2">
+            <p class="storyline"><mark class="blue">It may be boring, but you are making sure you know the material. There will be time for fun later. They sure do look to be having fun don’t they.</mark> 
+            </p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome3">
+            <p class="storyline">You decided to show up your classmates in some ping pong and <mark class="red">quickly you are reminded that you are terrible at the game. You get knocked out in the first round by Adrien. </mark></p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>
+        <div id="e1_outcome4">
+            <p class="storyline">You have always preferred games where you have to use your head. Chris is a challenging opponent, <mark class="green">but you are able to take the win when he finally falls for your carefully laid traps.</mark></p>
+            <button (click)="nextEvent()">Continue</button>
+        </div>    
+    </main>
+    <table id="e1_buttons">
+        <tr>
+            <button (click)="e1_incorrectAnswer2()">Choose to study instead of participate in the tournament</button>
+        </tr>
+        <tr>
+            <button (click)="e1_correctAnswer()">Play in the tournament and how your ping pong prowess</button>
+        </tr>
+        <tr>
+            <button (click)="e1_incorrectAnswer()">Challenge Chris to a chess match instead</button>
+        </tr>
+    </table>
+</div>
+
+<!-- EVENT TWO -->
+<div id="e2_container2">
+        <main>
+            <p id="e2_prompt" class="storyline">Algo time! Head to the whiteboard and figure out what the output is?</p>
+            <h2>here</h2>
+            <img src="assets/img/algo.png" alt="">
+            <div id="e2_outcome1">
+                <p class="storyline"><mark class="green">You got it right! great job!</mark></p>
+                <button [routerLink]="['/week12']">Continue</button>
+            </div>
+            <div id="e2_outcome2">
+                <p class="storyline"><mark class='red'>You are wrong.</mark> You may have logged that 15 outside of the console log.</p>
+                <button [routerLink]="['/week12']">Continue</button>
+            </div>
+            <div id="e2_outcome3">
+                <p class="storyline"><mark class='red'>You know you are at a coding school right? Everyone here is a nerd.</mark></p>
+                <button [routerLink]="['/week12']">Continue</button>
+            </div>
+            <div id="e2_outcome4">
+                <p class="storyline">In your head you hear a booming voice. "We have heard your prayer and will give you the knowledge you seek! In a sudden flash you understand MEAN perfectly and pass the exam with a black belt.<mark class='green'> You can’t believe that worked!</mark> 
+                </p>
+                <button [routerLink]="['/week10']">Continue</button>
+            </div>
+        </main>
+        <table id="e2_buttons">
+            <tr>
+                <button (click)="e2_incorrectAnswer()">15 10 20</button>
+            </tr>
+            <tr>
+                <button (click)="e2_correctAnswer()">15 10 20 15</button>
+            </tr>
+            <tr>
+                <button (click)="e2_incorrectAnswer2()">I'm not doing that. Algo's are for nerds.</button>
+            </tr>
+        </table>
+    </div>

@@ -1,1 +1,55 @@
-<p>week14 works!</p>
+<!-- EVENT ONE -->
+<div id="e1_container1">
+        <main>
+            <p id="e1_prompt" class="storyline">You’re not done yet.  Time to pick your final project!</p>
+            <div id="e1_outcome1">
+                <p class="storyline">Cellphone games are a huge market. Should be able to make a few bucks on it after you graduate</p>
+                <button (click)="nextEvent()">Continue</button>
+            </div>
+            <div id="e1_outcome2">
+                <p class="storyline">People that are getting dogs at shelters could use this to learn more about their new pet.
+                </p>
+                <button (click)="nextEvent()">Continue</button>
+            </div>
+            <div id="e1_outcome3">
+                <p class="storyline">Hourly photos of cute cats can’t go wrong. Maybe Mr. Nibbles will make it on there.</p>
+                <button (click)="nextEvent()">Continue</button>
+            </div>
+        </main>
+        <table id="e1_buttons">
+            <tr>
+                <button (click)="e1_incorrectAnswer2()">You create a game app for cells phones</button>
+            </tr>
+            <tr>
+                <button (click)="e1_correctAnswer()">You make an app that can upload photos of dogs and it will tell you what breed they are</button>
+            </tr>
+            <tr>
+                <button (click)="e1_incorrectAnswer()">You make an app that sends the user new photos of cats every hour</button>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- EVENT TWO -->
+    <div id="e2_container2">
+            <main>
+                <p id="e2_prompt" class="storyline">Time to present your project!</p>
+                <div id="e2_outcome1">
+                    <p class="storyline"><mark class='green'>Your phone game is a massive success. You put it on the market after graduation and make millions! You take your new fortune and buy Codding Dojo. You have accomplished your true goal of becoming the new Michael Choi! </mark></p>
+                    <button [routerLink]="['/congratulations']">Continue</button>
+                </div>
+                <div id="e2_outcome2">
+                    <p class="storyline"><mark class='green'>Your app becomes a big success after graduation. People start rescuing more animals at shelters because of it. You are awarded the Noble Peace Prize later that year for helping all of these dogs.</mark></p>
+                    <button [routerLink]="['/congratulations']">Continue</button>
+                </div>
+                <div id="e2_outcome3">
+                    <p class="storyline"><mark class='green'>People love cute cate photos so your app is a big success after graduation. Your app sees millions of users daily and you are able to sell your app for millions. You retire early and enjoy a live of leisure. </mark></p>
+                    <button [routerLink]="['/congratulations']">Continue</button>
+                </div>
+            </main>
+            <table id="e2_buttons">
+                <tr>
+                    <button (click)="present()">Present</button>
+                </tr>
+                
+            </table>
+        </div>
